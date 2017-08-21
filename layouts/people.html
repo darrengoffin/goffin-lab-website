@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= render '/head.*' %>
+<body>
+  <%= render '/nav.*' %>
+  <main role="main">
+    <%= yield %>
+    <% sorted_people.each do | item | %>
+      <div class='card'>
+        <img src="<%= item[:photo] %>" alt="">
+        <div class="photo-container">
+          <strong><%= item[:name] %></strong>
+          <p><%= item[:position] %></p>
+        </div>
+      </div>
+    <% end %>
+  </main>
+  <%= render '/footer.*' %>
+
+  <script src="/assets/javascripts/application.js"></script>
+
+</body>
+</html>
+
