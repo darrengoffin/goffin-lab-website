@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-compile '/people/lab-members.*' do
+compile '/lab-members.*' do
   filter :kramdown
   layout '/people.*'
 end
