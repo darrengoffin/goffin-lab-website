@@ -12,7 +12,7 @@ git push origin master
 
 cd output
 git fetch -v
-echo "www.goffinlab.com" > CNAME
+echo "goffinlab.com" > CNAME
 
 git add .
 git commit -am "Updated website"
