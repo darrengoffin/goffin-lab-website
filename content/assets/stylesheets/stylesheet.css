@@ -396,20 +396,30 @@ footer[role="contentinfo"] aside i.twitter {
 
 /* Photo cards */
 
-.card {
+.card ul li {
   border: 1px solid #e6e6e6;
-  transition: 0.3s;
-  width: 42%;
+  margin: 1em 1em;
+  width: 40%;
   display: inline-block;
-  margin: 10px;
+  list-style: none;
 }
 
-.photo-container {
-  padding: 2px 16px;
+.card ul ul {
+  border: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.card ul ul li {
+  margin: 0;
+  border: none;
+  width: 100%;
+  list-style: none;
+  padding: 0.25em 0 0.5em 0;
+}
 
-img {
+.card ul li img {
   width: 100%;
   height: auto;
 }

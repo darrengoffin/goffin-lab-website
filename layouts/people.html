@@ -4,16 +4,9 @@
 <body>
   <%= render '/nav.*' %>
   <main role="main">
-    <%= yield %>
-    <% sorted_people.each do | item | %>
-      <div class='card'>
-        <img src="<%= item[:photo] %>" alt="">
-        <div class="photo-container">
-          <strong><%= item[:name] %></strong>
-          <p><%= item[:position] %></p>
-        </div>
-      </div>
-    <% end %>
+  	<div class='card'>
+	  	<%= yield %>
+	</div>
   </main>
   <%= render '/footer.*' %>
 
