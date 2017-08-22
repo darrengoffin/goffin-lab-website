@@ -1,5 +1,11 @@
 #!/usr/bin/env ruby
 
+
+compile '/protocols/*.md' do
+  filter :kramdown
+  layout '/protocols.*'
+end
+
 compile '/lab-members.*' do
   filter :kramdown
   layout '/people.*'

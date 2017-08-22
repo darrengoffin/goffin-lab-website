@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= render '/head.*' %>
+<body>
+  <%= render '/nav.*' %>
+  
+  <main role="main">
+	  <div class="protocols">
+	  	<%= yield %>
+	  	</div>
+  </main>
+  
+  <%= render '/footer.*' %>
+ 
+  <script src="/assets/javascripts/application.js"></script>
+
+</body>
+</html>
+
