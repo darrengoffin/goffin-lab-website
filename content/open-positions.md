@@ -16,7 +16,7 @@ A potential PhD project will be available starting October 2018. Details will be
 
 ## MSc by Research  
 
-The lab is always seeking talented students wishing to pursue a MSc by Research. For details visit [here](https://www.york.ac.uk/biology/postgraduate/research/research-projects/).
+The lab is always seeking talented students wishing to pursue a MSc by Research. For details visit [__here__](https://www.york.ac.uk/biology/postgraduate/research/research-projects/).
 
 ## Undergraduate Students
 
