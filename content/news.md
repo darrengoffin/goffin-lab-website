@@ -1,3 +1,10 @@
+---
+title: News
+---
+
+# News
+- - -
+
 **May 2016**  
 Grace Cowen, a second year Biology undergraduate, has been awarded a Wellcome Trust Vacation Scholarship to work in the lab during the summer.
 
