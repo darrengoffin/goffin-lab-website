@@ -40,7 +40,6 @@ body {
     color: #333;
     font-weight: 300
     font-style: normal
-
 }
 
 p {
@@ -48,7 +47,7 @@ p {
 }
 
 strong {
-  font-weight: 500;
+	  font-weight: 500;
 }
 
 h1 {
@@ -94,11 +93,11 @@ a:visited {
 }
 
 a:active {
-  font-weight: 700
+	font-weight: 700
 }
 
 a:hover {
-  color: #0088cc
+	color: #a51c30
 }
 
 hr {
@@ -110,13 +109,20 @@ hr {
 /* Navigation bar */
 
 nav[role="navigation"] {
-	margin: 0 auto;
-	padding: 0.5em 1em;
-    background: #FAFAFA;
-	text-align: center;
-    border-bottom: 1px solid #e6e6e6;
-	border-top: 2px solid ##a51c30;
+	position: relative;
+	top: 0;
+    left: 0;
+    width: 100%;
+	width: 100%;
+    border-bottom: 1px solid #a51c30;
+    margin: 0 auto;
+	padding-top: 0.5em;
+}
 
+nav[role="navigation"] {
+    background-color: #FAFAFA;
+	text-align: center;
+	font-size: 12px;
 }
 
 nav[role="navigation"] ul {
@@ -126,22 +132,17 @@ nav[role="navigation"] ul {
 
 nav[role="navigation"] ul li {
     display: inline-block;
-	padding: 0 0.75em;
-
 }
 
 nav[role="navigation"] ul li a:link {
-	margin: 0.5em 0 0.25em 0;
-
+	margin: 0 0 0 0;
 	padding-left: 0;
-
-
     color: #333;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 12px;
     display: inline-block;
+    padding: 0.5em 0.75em;
 }
 
 nav[role="navigation"] ul li a:visited {
@@ -149,49 +150,40 @@ nav[role="navigation"] ul li a:visited {
 }
 
 nav[role="navigation"] ul li a:hover {
-    color: #0088cc
+    color: #a51c30
 }
 
 /* Dropdown menu */
 
-.dropdown:hover .dropdown-content a:link {
+.dropdown ul {
+	display: none;
+	position: absolute;
+    background-color: #FAFAFA;
+    border-top: 1px solid #a51c30;
+	min-width: 160px;
+	text-align: left;
+	z-index: 1;
+}
+
+.dropdown .dropdown-content a:link {
     text-decoration: none;
     text-transform: none;
     letter-spacing: 0;
     display: block;
     margin-left: 15px;
-    padding: 0 0 3px;
     border-bottom: none;
-    font-weight: 300
-}
-
-
-
-.dropdown ul {
- display: none;
-  position: absolute;
-z-index: 1;
-        background-color: #FAFAFA;
-min-width: 160px;
-text-align: left;
+    font-weight: 300;
+    padding: 0.75em 0;
+    font-size: 13px;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  margin-bottom: 10px;
 }
 
 .dropdown .dropdown-content li {
-  border-bottom: none;
-  padding: 0.1em;
-  display: block;
-
+	display: block;
 }
-
-.dropdown:hover .dropdown-content a:hover {
-    text-decoration: underline
-}
-
 
 /* Highlight current page in navigation bar */
 
@@ -203,7 +195,7 @@ text-align: left;
         width: 100%;
         position: relative;
         background: #FAFAFA;
-        border-bottom: 1px solid #e6e6e6;
+		border-bottom: 1px solid #a51c30;
         border-right: none;
         padding: 20px 30px;
         overflow: hidden
@@ -340,7 +332,7 @@ footer[role="contentinfo"] aside i.twitter {
 @media only print {
     html body {
         background: white;
-        font-size: 12pt;
+        font-size: 13pt;
         padding: 0.5in
     }
 
