@@ -65,66 +65,143 @@
   
   <main role="main">
 	  <div class="protocols">
-	  	<h1 id="preparation-of-genomic-dna-for-genotyping">Preparation of Genomic DNA for Genotyping</h1>
+	  	<h1 id="pcr-for-mecp2-stop-mice">PCR for <em>Mecp2-Stop</em> mice</h1>
 
-<ul>
-  <li>Add 600 μl tissue lysis buffer with 3 μl Proteinase K to each tube</li>
-  <li>
-    <p>Lyse overnight at 55°C</p>
-  </li>
-  <li>Add 200 μl protein precipitation solution. Vortex for 10 secs to thoroughly mix</li>
-  <li>Centrifuge at max speed for 3 mins</li>
-  <li>Decant supernatant into fresh tube containing 600 μl isopropanol</li>
-  <li>Add 1 µl of glycogen to better visualise pellet</li>
-  <li>Invert the tubes &gt;50 times</li>
-  <li>
-    <p>Centrifuge for 3 mins at max speed to precipitate DNA. A small white pellet should be visible. Pour off isopropanol</p>
-  </li>
-  <li>Add 200 μl of 70% ethanol and invert a few times to wash pellet</li>
-  <li>Centrifuge for 3 mins at max speed</li>
-  <li>
-    <p>Pellet may be loose. Remove ethanol and air dry for 5 mins</p>
-  </li>
-  <li>Ear notch: add 50 μl TE buffer</li>
-  <li>
-    <p>Tail: add 200 μl TE buffer</p>
-  </li>
-  <li>Hydrate DNA for 1 hour at 65°C</li>
-</ul>
+<h2 id="pcr-primers">PCR primers</h2>
 
-<h3 id="reagents">Reagents</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Short name</th>
+      <th>Primer name</th>
+      <th>Sequence (5’ -&gt; 3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stop 1</td>
+      <td>oIMR7171</td>
+      <td>AAC AGT GCC AGC TGC TCT TC</td>
+    </tr>
+    <tr>
+      <td>Stop 2</td>
+      <td>oIMR7172</td>
+      <td>CTG TAT CCT TGG GTC AAG CTG</td>
+    </tr>
+    <tr>
+      <td>Stop 3</td>
+      <td>oIMR7415</td>
+      <td>GCC AGA GGC CAC TTG TGT AG</td>
+    </tr>
+  </tbody>
+</table>
 
-<ul>
-  <li>Tissue Lysis buffer (25 mM Tris pH 8.0, 10 mM EDTA pH 8.0, 1% SDS)
-    <ul>
-      <li>1.25 ml of 1M Tris pH 8.0</li>
-      <li>1 ml of 0.5M EDTA</li>
-      <li>2.5 ml of 20% SDS</li>
-      <li>Make up to 50 ml with H2O<br />
- <br /></li>
-    </ul>
-  </li>
-  <li>Proteinase K
-    <ul>
-      <li>600 mAU/ml (about 20 mg/ml)<br />
-<br /></li>
-    </ul>
-  </li>
-  <li>Protein Precipitation Solution (7.5M Ammonium Acetate)
-    <ul>
-      <li>28.9 grams of Ammonium Acetate</li>
-      <li>Make up to 50 ml with H2O<br />
-<br /></li>
-    </ul>
-  </li>
-  <li>TE Buffer (10 mM Tris pH 7.4, 1 mM EDTA)
-    <ul>
-      <li>500 μl of 1M Tris pH 7.4</li>
-      <li>100 μl of 0.5M EDTA</li>
-      <li>Make up to 50 ml with H2O</li>
-    </ul>
-  </li>
-</ul>
+<h2 id="pcr-master-mix">PCR Master Mix</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Volume (µl)</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10X Buffer</td>
+      <td>2</td>
+      <td>1X</td>
+    </tr>
+    <tr>
+      <td>dNTP (2 mM)</td>
+      <td>2</td>
+      <td>0.2 mM</td>
+    </tr>
+    <tr>
+      <td>Stop 1 (10 µM)</td>
+      <td>1</td>
+      <td>0.5 µM</td>
+    </tr>
+    <tr>
+      <td>Stop 2 (10 µM)</td>
+      <td>1</td>
+      <td>0.5 µM</td>
+    </tr>
+    <tr>
+      <td>Stop 3 (10 µM)</td>
+      <td>1</td>
+      <td>0.5 µM</td>
+    </tr>
+    <tr>
+      <td>DreamTaq DNA Polymerase (5 U/µl)</td>
+      <td>1</td>
+      <td>0.5 U</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>1</td>
+      <td> </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td><strong>Total volume</strong></td>
+      <td>19</td>
+      <td> </td>
+    </tr>
+  </tfoot>
+</table>
+
+<h2 id="pcr-program">PCR program:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>Temperature (°C)</th>
+      <th>Time</th>
+      <th>N cycles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Initial denaturation</td>
+      <td>95</td>
+      <td>3m</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Denaturation</td>
+      <td>95</td>
+      <td>30s</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Annealing</td>
+      <td>65</td>
+      <td>60s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Extension</td>
+      <td>72</td>
+      <td>30s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Final extension</td>
+      <td>72</td>
+      <td>2m</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="expected-results">Expected results</h2>
+<p>Heterozygote = 379 bp and 222 bp<br />
+Wild type = 379 bp<br />
+Mutant = 222 bp</p>
+
 
 	  	</div>
   </main>
