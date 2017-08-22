@@ -5,6 +5,9 @@ title: News
 # News
 - - -
 
+**May 2017**  
+Kate Yuen, a second year HYMS student, has been awarded an INSPIRE Vacation Scholarship to work in the lab during the summer.
+
 **May 2016**  
 Grace Cowen, a second year Biology undergraduate, has been awarded a Wellcome Trust Vacation Scholarship to work in the lab during the summer.
 
