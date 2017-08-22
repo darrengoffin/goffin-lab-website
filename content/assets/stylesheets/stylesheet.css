@@ -397,7 +397,6 @@ footer[role="contentinfo"] aside i.twitter {
 /* Photo cards */
 
 .card ul li {
-  border: 1px solid #e6e6e6;
   margin: 1em 1em;
   width: 40%;
   display: inline-block;
