@@ -26,13 +26,13 @@
 
 ## PCR program:  
 
-| Step                 | Temperature (°C) | Time   | N cycles |
-| ---------------------|------------------|--------|----------|
-| Initial denaturation | 95               | 3m     | 1        |
-| Denaturation         | 95               | 30s    | 34       |
-| Annealing            | 65               | 60s    |          |
-| Extension            | 72               | 30s    |          |
-| Final extension      | 72               | 2m     | 1        |
+| Step                 | Temp (°C) | Time   | N cycles |
+| ---------------------|-----------|--------|----------|
+| Initial denaturation | 95        | 3m     | 1        |
+| Denaturation         | 95        | 30s    | 34       |
+| Annealing            | 65        | 60s    |          |
+| Extension            | 72        | 30s    |          |
+| Final extension      | 72        | 2m     | 1        |
 
 
 ## Expected results  
