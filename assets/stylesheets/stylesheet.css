@@ -59,10 +59,38 @@ h1 {
 
 h2 {
     font-size: 24px;
-    margin-top: 0.5em;
+    margin-top: 1em;
     margin-bottom: 0.5em;
     font-weight: 400;
     line-height: 1;
+}
+
+a {
+	color: #a51c30;
+}
+
+
+a:link {
+	color: #a51c30;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #a51c30;
+}
+
+a:active {
+	font-weight: 700
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px #f3f3f3 solid;
+    margin: 2em 0
 }
 
 @media only screen and (max-width: 767px) {
@@ -83,30 +111,8 @@ h2 {
 	}
 }
 
-a:link {
-	color: black;
-	text-decoration: none;
-}
-
-a:visited {
-	color: black;
-}
-
-a:active {
-	font-weight: 700
-}
-
-a:hover {
-	color: #a51c30
-}
-
-hr {
-    border: none;
-    border-top: 1px #f3f3f3 solid;
-    margin: 2em 0
-}
-
 /* Navigation bar */
+
 
 nav[role="navigation"] {
 	position: relative;
@@ -455,4 +461,26 @@ footer[role="contentinfo"] aside i.twitter {
 	height: 100% !important;
 }
 
+/* Table */
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px 1em;
+    text-align: left;
+}
+
+th {
+    background-color: #a51c30;
+    color: white;
+    text-align: center;
+}
+
+tfoot {
+	background-color: DCDCDC;
+
+}
 
