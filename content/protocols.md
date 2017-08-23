@@ -14,7 +14,7 @@ title: Protocols
 [Stop PCR](/protocols/pcr-stop)  
 
 ## Immmunohistochemistry  
-[Stop PCR](/protocols/ihc)  
+[Immunohistochemistry](/protocols/ihc)  
 
 ## Miscellaneous
 [DNA Ladder Preparation](/protocols/dna-ladder-100bp)  
