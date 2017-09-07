@@ -3,8 +3,13 @@
 <%= render '/head.*' %>
 <body>
   <%= render '/nav.*' %>
-  <main role="main">
+
+<main role="main">
+  <article class="page">
+
     <%= yield %>
+
+</article>
   </main>
   <%= render '/footer.*' %>
  
