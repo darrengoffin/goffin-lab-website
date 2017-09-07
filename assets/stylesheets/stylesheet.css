@@ -1373,55 +1373,6 @@ article .more > p:first-of-type {
     height: 100% !important;
 }
 
-/* Table */
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 5px 1em;
-    text-align: left;
-}
-
-th {
-    background-color: #a51c30;
-    color: white;
-    text-align: center;
-}
-
-tfoot {
-    background-color: DCDCDC;
-    
-}
-
-/* Protocols */
-
-.protocols h3 {
-    margin: 0.5em 0;
-}
-
-.protocols ul {
-    margin: 0;
-    margin-left: 1em;
-    padding: 0;
-    line-height: 1.5em;
-    display: block;
-}
-
-.protocols li {
-    
-}
-
-.protocols li li {
-    margin-left: 1em;
-}
-
-
-
-
-
 
 /* Photo cards */
 
