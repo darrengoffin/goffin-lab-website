@@ -21,11 +21,6 @@
     },
     "link": "0001-keywords-as-argument-labels.md",
     "sha": "db324b7f0b397008c72d0e2a33dfaf8e5292160e",
- 
-    "reviewManager": {
-      "name": "",
-      "link": ""
-    },
     "title": " Allow (most) keywords as argument labels\n"
   },
   {
@@ -50,10 +45,6 @@
     },
     "link": "0002-remove-currying.md",
     "sha": "490a90e235ac20a2fa0defabac89c6d1b2ff6986",
-    "reviewManager": {
-      "name": "",
-      "link": ""
-    },
     "title": " Removing currying func declaration syntax\n"
   },
   {
@@ -71,10 +62,6 @@
     },
     "sha": "c889905cb6a164774d1e9d9c2d105e485ee9c088",
     "link": "0003-remove-var-parameters.md",
-    "reviewManager": {
-      "name": "Joe Pamer",
-      "link": "https://github.com/jopamer"
-    },
     "title": " Removing var from Function Parameters\n"
   }
  ]
