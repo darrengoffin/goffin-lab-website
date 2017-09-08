@@ -7,22 +7,14 @@
         "link": "https://github.com/DougGregor"
       }
     ],
-    "warnings": [
-      {
-        "stage": "parse",
-        "kind": "warning",
-        "message": "Missing review manager."
-      }
-    ],
     "id": "SE-0001",
     "status": {
-      "state": ".implemented",
-      "version": "2.2"
+      "state": ".implemented"
     },
     "link": "0001-keywords-as-argument-labels.md",
-    "sha": "db324b7f0b397008c72d0e2a33dfaf8e5292160e",
     "title": " Allow (most) keywords as argument labels\n"
   },
+ 
   {
     "summary": "Curried function declaration syntax `func foo(x: Int)(y: Int)` is of limited\nusefulness and creates a lot of language and implementation complexity. We\nshould remove it.\n",
     "authors": [
@@ -31,23 +23,15 @@
         "link": "https://github.com/jckarter"
       }
     ],
-    "warnings": [
-      {
-        "stage": "parse",
-        "kind": "warning",
-        "message": "Missing review manager."
-      }
-    ],
     "id": "SE-0002",
     "status": {
-      "state": ".implemented",
-      "version": "3"
+      "state": ".implemented"
     },
     "link": "0002-remove-currying.md",
-    "sha": "490a90e235ac20a2fa0defabac89c6d1b2ff6986",
     "title": " Removing currying func declaration syntax\n"
   },
-  {
+ 
+ {
     "summary": "There has been some confusion of semantics when a function parameter is marked\nas `inout` compared to `var`. Both give a mutable local copy of a value but\nparameters marked `inout` are automatically written back.\n",
     "authors": [
       {
@@ -57,10 +41,8 @@
     ],
     "id": "SE-0003",
     "status": {
-      "state": ".implemented",
-      "version": "3"
+      "state": ".implemented"
     },
-    "sha": "c889905cb6a164774d1e9d9c2d105e485ee9c088",
     "link": "0003-remove-var-parameters.md",
     "title": " Removing var from Function Parameters\n"
   }
