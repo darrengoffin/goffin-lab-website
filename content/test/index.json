@@ -21,18 +21,7 @@
     },
     "link": "0001-keywords-as-argument-labels.md",
     "sha": "db324b7f0b397008c72d0e2a33dfaf8e5292160e",
-    "trackingBugs": [
-      {
-        "updated": "2015-12-22T18:20:12.000-0600",
-        "radar": "rdar://problem/22415674",
-        "resolution": "Done",
-        "id": "SR-344",
-        "link": "https://bugs.swift.org/browse/SR-344",
-        "status": "Resolved",
-        "assignee": "Doug Gregor",
-        "title": "Implement SE-0001: Allow (most) keywords as argument labels"
-      }
-    ],
+ 
     "reviewManager": {
       "name": "",
       "link": ""
