@@ -6,6 +6,8 @@ title: Publications
 
 - - -
 
+[**Biotin tagging of MeCP2 in mice reveals contextual insights into the Rett syndrome transcriptome.**](https://www.nature.com/articles/nm.4406) Johnson, B.S., Zhao, Y.-T., Fasolino, M., Lamonica, J.M., Kim, Y.J., Georgakilas, G., Wood, K.H., Bu, D., Cui, Y., Goffin, D., et al. (2017).  Nat. Med. 23, 1203–1214.
+
 [**Elevating expression of MeCP2 T158M rescues DNA binding and Rett syndrome-like phenotypes.**](https://www.jci.org/articles/view/90967) Lamonica JM, Kwon DY, Goffin D, Fenik P, Johnson BS, Cui Y, Guo H, Veasey S, Zhou Z. (2017) J Clin Invest 1;127(5):1889-1904.
 
 [**GABAA receptor activity shapes the formation of inhibitory synapses between developing medium spiny neurons.**](http://journal.frontiersin.org/article/10.3389/fncel.2015.00290/full) Arama, J., Abitbol, K., Goffin, D., Fuchs, C., Sihra, T.S., Thomson, A.M., and Jovanovic, J.N. (2015). Front. Cell. Neurosci. 9, 290.
