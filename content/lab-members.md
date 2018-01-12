@@ -9,7 +9,7 @@ title: Lab members
    * [**Darren Goffin**](/darren-goffin/)   
    * Principal Investigator, Lecturer in Neuroscience  
 
-* ![Nicholas Johnson Image](/assets/images/nickjohnson.jpg)  
+* ![Nicholas Johnson Image](/assets/images/nicholasjohnson.jpg)  
   * **Nicholas Johnson**  
   * Postdoctoral Research Associate
 
