@@ -9,10 +9,10 @@ title: Lab members
    * [**Darren Goffin**](/darren-goffin/)   
    * Principal Investigator, Lecturer in Neuroscience  
 
-* ![Nicholas Johnson Image](/)  
+* ![Nicholas Johnson Image](/assets/images/nickjohnson.jpg)  
   * **Nicholas Johnson**  
   * Postdoctoral Research Associate
 
-* ![Grace Cowen Image](/)  
+* ![Grace Cowen Image](/assets/images/gracecowen.jpg)  
   * **Grace Cowen**  
   * BBSRC PhD Student
