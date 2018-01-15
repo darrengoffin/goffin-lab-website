@@ -3232,7 +3232,7 @@ a.block-inline {
     height: 178px;
     background-size: 230px 178px;
     background-repeat: no-repeat;
-    background-image: url("assets/images/darrengoffin.jpg")
+    background-image: url(/assets/images/darrengoffin.jpg)
 }
 
 .page-overview .image-nicholasjohnson {
@@ -3240,7 +3240,7 @@ a.block-inline {
     height: 178px;
     background-size: 230px 178px;
     background-repeat: no-repeat;
-    background-image: url("assets/images/nicholasjohnson.jpg")
+    background-image: url(/assets/images/nicholasjohnson.jpg)
 }
 
 .page-overview .image-gracecowen {
@@ -3248,7 +3248,7 @@ a.block-inline {
     height: 178px;
     background-size: 230px 178px;
     background-repeat: no-repeat;
-    background-image: url("assets/images/gracecowen.jpg")
+    background-image: url(/assets/images/gracecowen.jpg)
 }
 
 
