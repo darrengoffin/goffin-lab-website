@@ -1,18 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <%= render '/head.*' %>
-<body>
+
+<body class="page-overview">
+
   <%= render '/nav.*' %>
 
-<main role="main">
-  <article class="page">
 
 
-  	<div class='card'>
-	  	<%= yield %>
-	</div>
-</article>
-  </main>
+<main id="main" class="main" role="main" data-page-type="overview">
+
+<section class="section section-labmembers ">
+<div class="section-content">
+
+<div class="profile-list-wrapper">
+
+<h1 class="typography-subsection-headline">Lab members</h1>
+
+<ul class="profile-list">
+
+    <li class="profile-list-item">
+    <a  href="" class="block">
+    <figure class="profile-image image-darrengoffin">
+        <figcaption class="profile-caption">
+            <h3 class="typography-body block-link profile-name">Darren Goffin</h3>
+            <h4 class="typography-body typography-profile-title">Principal Investigator</h4>
+        </figcaption>
+    </figure>
+    </a>
+    </li>
+
+    <li class="profile-list-item">
+<figure class="profile-image image-darrengoffin">
+<figcaption class="profile-caption">
+<h3 class="typography-body profile-name">Nicholas Johnson</h3>
+<h4 class="typography-body typography-profile-title">Postdoc</h4>
+</figcaption>
+</figure>
+    </li>	
+
+    <li class="profile-list-item">
+<figure class="profile-image image-darrengoffin">
+<figcaption class="profile-caption">
+<h3 class="typography-body profile-name">Grace Cowen</h3>
+<h4 class="typography-body typography-profile-title">PhD student</h4>
+</figcaption>
+</figure>
+    </li>
+
+</ul>
+
+</div>
+<div class="keyline"></div>
+</div>
+</section>
+				
+<section class="section section-alumni">
+<div class="section-content">
+<div class="profile-list-wrapper">
+
+<h2 class="typography-subsection-headline">Alumni</h2>
+								
+<ul class="profile-list">							
+    <li class="profile-list-item">
+        <h3 class="typography-body profile-name">Joanne Topping</h3>
+        <h4 class="typography-subbody">PhD student<br/>University of Leeds<br/>Former Senior Research Technician<br /></h4>
+    </li>
+
+    <li class="profile-list-item">
+        <h3 class="typography-body profile-name">Samantha Softley</h3>
+        <h4 class="typography-subbody">PhD student<br/>University of Newcastle<br/>Former Research Technician<br /></h4>
+    </li>
+</ul>
+</div>
+</div>
+</section>
+				
+</main>
+
+
   <%= render '/footer.*' %>
 
   <script src="/assets/javascripts/application.js"></script>
