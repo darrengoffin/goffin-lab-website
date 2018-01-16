@@ -3186,10 +3186,6 @@ a.block-inline {
     padding-top: 50px
 }
 
-.page-overview .section-labmembers {
-    padding-top: 50px
-}
-
 @media only screen and (max-width: 735px) {
     .page-overview .section-labmembers {
         padding-top: 66px
