@@ -3004,19 +3004,21 @@ a.block-inline {
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 }
 
+h1 {
+    font-size: 17px;
+    line-height: 1.52947;
+    font-weight: 400;
+    letter-spacing: -.021em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+
+
 .typography-subbody {
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
     letter-spacing: -.01em;
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-}
-
-.typography-sosumi {
-    font-size: 11px;
-    line-height: 1.45455;
-    font-weight: 400;
-    letter-spacing: .005em;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 }
 
