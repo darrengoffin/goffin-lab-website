@@ -3182,6 +3182,10 @@ a.block-inline {
 
 /* Lab members */
 
+.page-overview  {
+    padding-top: 50px
+}
+
 .page-overview .section-labmembers {
     padding-top: 50px
 }
