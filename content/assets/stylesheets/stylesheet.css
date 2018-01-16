@@ -3243,8 +3243,8 @@ a.block-inline {
 
 /* Lab members */
 
-.page-overview .section-labmembers {
-    padding-top: 53px
+.page-overview {
+    padding-top: 50px
 }
 
 @media only screen and (max-width: 735px) {
@@ -3266,10 +3266,6 @@ a.block-inline {
 }
 
 /* Alumni */
-
-.page-overview .section-alumni {
-    padding-top: 75px
-}
 
 @media only screen and (max-width: 735px) {
     .page-overview .section-alumni {
