@@ -564,6 +564,7 @@ footer[role="contentinfo"] {
     background: #333;
     color: white;
     padding: 20px 30px;
+    margin-left: 250px;
     min-height: 74px
 }
 
@@ -3243,8 +3244,8 @@ a.block-inline {
 
 /* Lab members */
 
-.page-overview {
-    padding-top: 50px
+.page-overview .section-labmembers {
+    padding-top: 53px
 }
 
 @media only screen and (max-width: 735px) {
@@ -3266,6 +3267,10 @@ a.block-inline {
 }
 
 /* Alumni */
+
+.page-overview .section-alumni {
+    padding-top: 75px
+}
 
 @media only screen and (max-width: 735px) {
     .page-overview .section-alumni {
