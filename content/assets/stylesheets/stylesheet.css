@@ -564,7 +564,6 @@ footer[role="contentinfo"] {
     background: #333;
     color: white;
     padding: 20px 30px;
-    margin-left: 250px;
     min-height: 74px
 }
 
@@ -1312,39 +1311,6 @@ article .more > p:first-of-type {
 }
 
 
-
-
-
-
-/* Photo cards */
-
-.card ul li {
-    margin: 1em 1em;
-    width: 40%;
-    display: inline-block;
-    list-style: none;
-}
-
-.card ul ul {
-    border: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.card ul ul li {
-    margin: 0;
-    border: none;
-    width: 100%;
-    list-style: none;
-    padding: 0.25em 0 0.5em 0;
-}
-
-.card ul li img {
-    width: 100%;
-    height: auto;
-}
-
 /* Google maps */
 
 .google-maps {
@@ -1364,34 +1330,6 @@ article .more > p:first-of-type {
 }
 
 
-/* Photo cards */
-
-.card ul li {
-  margin: 1em 1em;
-  width: 35%;
-  display: inline-block;
-  list-style: none;
-}
-
-.card ul ul {
-  border: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.card ul ul li {
-  margin: 0;
-  border: none;
-  width: 100%;
-  list-style: none;
-  padding: 0.25em 0 0.5em 0;
-}
-
-.card ul li img {
-  width: 100%;
-  height: auto;
-}
 
 /* Google maps */
 
@@ -3245,7 +3183,7 @@ a.block-inline {
 /* Lab members */
 
 .page-overview .section-labmembers {
-    padding-top: 53px
+    padding-top: 50px
 }
 
 @media only screen and (max-width: 735px) {
@@ -3269,7 +3207,7 @@ a.block-inline {
 /* Alumni */
 
 .page-overview .section-alumni {
-    padding-top: 75px
+    padding-top: 50px
 }
 
 @media only screen and (max-width: 735px) {
