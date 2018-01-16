@@ -52,7 +52,6 @@ h1 {
 #banner a {
   color: white;
   letter-spacing: .021em;
-
 }
 
 #banner a:hover {
@@ -745,12 +744,7 @@ article .more > p:first-of-type {
         background-image: url("/assets/images/icon-menu.svg")
     }
     
-    #logo a {
-        width: 198px;
-        margin: 0 auto
-    }
-    
-    main {
+        main {
         max-width: 100%;
         min-width: 320px;
         margin-left: 0;
@@ -761,93 +755,7 @@ article .more > p:first-of-type {
         margin-left: 0
     }
     
-    h1 {
-        font-size: 48px;
-        font-weight: 200;
-        line-height: 1
-    }
-    
-    h2 {
-        font-size: 40px;
-        font-weight: 300;
-        line-height: 1.1
-    }
-    
-    h3 {
-        font-size: 38px;
-        font-weight: 300;
-        line-height: 1.1
-    }
-    
-    h4 {
-        font-size: 36px;
-        font-weight: 300;
-        line-height: 1.2
-    }
-    
-    h5 {
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 1.4
-    }
-    
-    h6 {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.5
-    }
-    
-    table.downloads {
-        border: 1px #f3f3f3 solid
-    }
-    
-    table.downloads, table.downloads thead, table.downloads tbody, table.downloads th,
-    table.downloads td, table.downloads tr {
-        display: block !important
-    }
-    
-    table.downloads thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px
-    }
-    
-    table.downloads tr {
-        border: 1px solid #f3f3f3
-    }
-    
-    table.downloads td {
-        border-left: none !important;
-        border-right: none !important;
-        border-bottom: 1px solid #f3f3f3 !important;
-        position: relative;
-        padding-left: 35%;
-        width: 100% !important
-    }
-    
-    table.downloads td:before {
-        position: absolute;
-        top: 0.5em;
-        left: 0.5em;
-        width: 27.5%;
-        padding-right: 10px;
-        white-space: nowrap;
-        text-align: right
-    }
-    
-    table.downloads td.platform:before {
-        content: "Platform"
-    }
-    
-    table.downloads td.download:before {
-        content: "Download";
-        top: 1em
-    }
-    
-    table.downloads td.date:before {
-        content: "Date"
-    }
-}
+  }
 
 @media only print {
     html body {
@@ -1117,48 +1025,7 @@ body, input, textarea, select, button {
     text-align: left
 }
 
-h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
-    display: block;
-    margin: 0
-}
 
-h1 + * , h2 + * , h3 + * , h4 + * , h5 + * , h6 + * {
-    margin-top: .75em
-}
-
-h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6, h2 + h1, h2 + h2, h2 + h3, h2 + h4,
-h2 + h5, h2 + h6, h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6, h4 + h1, h4 + h2, h4 + h3,
-h4 + h4, h4 + h5, h4 + h6, h5 + h1, h5 + h2, h5 + h3, h5 + h4, h5 + h5, h5 + h6, h6 + h1, h6 + h2,
-h6 + h3, h6 + h4, h6 + h5, h6 + h6 {
-    margin-top: 0
-}
-
-p + h1, ul + h1, ol + h1, p + h2, ul + h2, ol + h2, p + h3, ul + h3, ol + h3, p + h4, ul + h4,
-ol + h4, p + h5, ul + h5, ol + h5, p + h6, ul + h6, ol + h6 {
-    margin-top: 1.4em
-}
-
-p + * , ul + * , ol + * {
-    margin-top: .7em
-}
-
-ul, ol {
-    margin-left: 1.17647em
-}
-
-ul ul, ul ol, ol ul, ol ol {
-    margin-top: 0;
-    margin-bottom: 0
-}
-
-nav ul, nav ol {
-    margin: 0;
-    list-style: none
-}
-
-li li {
-    font-size: 1em
-}
 
 a {
     color: #0070c9
@@ -1218,9 +1085,7 @@ sup {
     bottom: -.2em
 }
 
-h1 sup, h2 sup, h3 sup {
-    font-size: .4em
-}
+
 
 sup a {
     vertical-align: inherit;
