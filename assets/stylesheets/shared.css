@@ -152,18 +152,11 @@ header h1 {
 	max-width: 600px;
 }
 
-footer {
+#footer {
   position: absolute;
-width: 100%;
-  margin: 20px 0;
-  background-color: var(--branding-background-color);
-  padding: 10px 20px;
+  bottom: 0;
+  width: 100%;
 }
-
-footer p {
-  margin: 10px auto;
-}
-
 
 section {
 	margin: auto;
