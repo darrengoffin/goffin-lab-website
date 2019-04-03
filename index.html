@@ -1,27 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+<meta charset="utf-8" />
   
-    <title>Goffin lab</title>
-  
-  <meta name="author" content=“Darren Goffin” />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <link rel="stylesheet" media="all" href="/assets/stylesheets/stylesheet.css" />    
-  <link rel="canonical" href="https://goffinlab.com/“>
-  
-  <meta name="description" content="Our research aims to understand neural circuits in health and disease.">
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content=“@DarrenGoffin” />
-  
-  <meta name="twitter:title" content="Swift.org" />
-  <meta name="twitter:description" content="Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns." />
-  
-  <meta property="og:site_name" content=“Goffinlab.com” />
-  <meta property="og:title" content=“goffinlab.com” />
-  <meta property="og:url" content="https://goffinlab.com” />
-  <meta property="og:description" content=“The Goffin lab is focused on neuroscience research“ />
+<title>Goffin lab - People</title>
+<meta name="supported-color-schemes" content="light dark">	
+<link id="theme" href="stylesheets/light.css" media="screen" rel="Stylesheet" type="text/css" />
+<link href="assets/stylesheets/shared.css" media="screen" rel="Stylesheet" type="text/css" />
+	
   
 </head>
 
@@ -62,6 +48,28 @@
 </article>
   </main> 
   <script src="/assets/javascripts/application.js"></script>
+
+<footer>
+    <button onclick="switchThemes();">Click to Switch Themes</button>
+
+	<script type="text/javascript">
+	
+		function switchThemes() {
+			console.log("switching themes...");
+			var stylesheetLinkElement = document.getElementById('theme');
+			if (stylesheetLinkElement.getAttribute('href') == 'stylesheets/light.css') {
+				stylesheetLinkElement.setAttribute('href', 'stylesheets/dark.css');
+			}
+			else {
+				stylesheetLinkElement.setAttribute('href', 'stylesheets/light.css');
+			}
+		}
+		
+	</script>
+</footer>
+
+</body>
+</html>
 
 </body>
 </html>
