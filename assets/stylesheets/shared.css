@@ -1,9 +1,12 @@
+
 :root {
 }
+
 
 html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
+
 
 body {
   margin:0;
@@ -11,46 +14,15 @@ body {
 }
 
 body {
-	/*
-		For this example, we'll use a the current system UI font:
-		
-			https://furbo.org/2018/03/28/system-fonts-in-css/
-	*/
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    
-    /*
-    	Here's our first use of CSS variables. The --text-color and --background-color are defined in both
-    	light.css and dark.css. The <link id="theme" href="stylesheets ... > determines which one is loaded
-    	as a default. The switchThemes() JavaScript function switches between the stylesheets.
-    	
-    	When the stylesheets switch, the variables in the CSS hierarchy also change, so you'll get new 
-    	colors for the body element.
-    */
-	color: var(--text-color);
-	background-color: var(--background-color);
-	margin: 0;
-	padding: 0;
-	
-	/*
-		When the colors for this element change, it's because the stylesheet was switched. To add some
-		polish (and match any animated changes in the browser itself) the color changes are animated
-		using a CSS transition.
-	*/
-	transition: color var(--transition-duration) var(--transition-timing),
-				background-color var(--transition-duration) var(--transition-timing);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  transition: color var(--transition-duration) var(--transition-timing), background-color var(--transition-duration) var(--transition-timing);
 }
 
-code {
-	font-family: "Menlo", "Andale Mono", monospace;
-	font-size: 0.95em;
-}
-
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-* Header */
+/* Header */
 
 
 .header {
@@ -108,15 +80,19 @@ code {
 	padding:6px 10px;
 }
 
-header h1 {
-	margin: 10px auto;
-	max-width: 600px;
+
+/* Footer */
+
+footer {
+	margin: 20px 0;
+	color: var(--branding-text-color);
+	background-color: var(--branding-background-color);
+	padding: 10px 20px;
 }
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+footer p {
+	margin: 10px auto;
+	max-width: 600px;
 }
 
 section {
@@ -127,20 +103,11 @@ section {
 
 section h2 {
 	border-bottom: 2px solid var(--accent-color);
-
-	transition: border var(--transition-duration) var(--transition-timing);
 }
 
 section p.highlighted {
  	padding: 10px;
- 	
- 	/*
- 		This is the first element in the DOM hierarchy that doesn't use a color inherited from
- 		the body element. Because of that, we need to set up another transition for this
- 		element and its children.
- 	*/
 	background-color: var(--accent-color);
-	transition: background-color var(--transition-duration) var(--transition-timing);
 }
 
 section button {
@@ -154,62 +121,14 @@ section button {
 	background-size: 24px 24px;
 	background-repeat: no-repeat;
 	background-color: var(--control-color);
-	
-	/*
-		CSS variables are not just limited to colors. Here we're using one to get the URL of
-		the background image: different files are used depending on the theme.
-	*/
-	background-image: var(--configuration-icon);
-	
-	/*
-		Note: There is currently a bug in WebKit where the base URL for the url() is not
-		relative to the stylesheet (per https://drafts.csswg.org/css-values-3/#urls).
-
-			https://bugs.webkit.org/show_bug.cgi?id=190807
-				
-		If you want to see what you're missing, and not have it transition with the theme,
-		here you go:
-		
-	background-image: url('../images/gear_light.png');
-	*/
-
-	/*
-		Note that there's no transition for the background-image: these properties are not
-		animatable. If you really need to do this, you have several options:
-		
-			https://stackoverflow.com/questions/9483364/css3-background-image-transition		
-	*/
-	transition: color var(--transition-duration) var(--transition-timing),
-				background-color var(--transition-duration) var(--transition-timing);
 }
 
-section input[type="text"] {
-	font-size: 1em;
-	font-weight: 400;
-	padding: 10px;
-	color: var(--control-text-color);
-	background-color: var(--control-background-color);
-	border-radius: 4px;
-	border: 2px solid var(--control-color);
-
-	transition: color var(--transition-duration) var(--transition-timing),
-				background-color var(--transition-duration) var(--transition-timing),
-				border-color var(--transition-duration) var(--transition-timing);
-}
-
-section input[type="text"]::placeholder {
-	color: var(--control-disabled-color);
-
-	transition: color var(--transition-duration) var(--transition-timing);
-}
 
 section div.container {
 	height: 200px;
 	overflow: scroll;
 	overflow-x: hidden;
 	background-color: var(--container-color);
-
-	transition: background-color var(--transition-duration) var(--transition-timing);
 }
 
 section div.container p {
