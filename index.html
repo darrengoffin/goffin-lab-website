@@ -64,8 +64,6 @@ function switchThemes() {
 
 <body onload="checkPrefersColorScheme();">
 
-<div id="page-container">
-	
 <header class="header">
 
   <div class="header-limiter">
@@ -94,11 +92,27 @@ function switchThemes() {
 
 </section>
 
-<footer id="footer">
-  <button onclick="switchThemes();">Click to Switch Themes</button>
-</footer>
-		
-</div>
 	
+<footer>
+    <button onclick="switchThemes();">Click to Switch Themes</button>
+
+	<script type="text/javascript">
+	
+		function switchThemes() {
+			console.log("switching themes...");
+			var stylesheetLinkElement = document.getElementById('theme');
+			if (stylesheetLinkElement.getAttribute('href') == 'stylesheets/light.css') {
+				stylesheetLinkElement.setAttribute('href', 'stylesheets/dark.css');
+			}
+			else {
+				stylesheetLinkElement.setAttribute('href', 'stylesheets/light.css');
+			}
+		}
+		
+	</script>
+</footer>
+
 </body>
 </html>
+
+
