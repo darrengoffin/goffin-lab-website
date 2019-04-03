@@ -6,7 +6,7 @@
 <title>Goffin lab - People</title>
 <meta name="supported-color-schemes" content="light dark">	
 <link id="theme" href="stylesheets/light.css" media="screen" rel="Stylesheet" type="text/css" />
-<link href="stylesheets/shared.css" media="screen" rel="Stylesheet" type="text/css" />
+<link href="assets/stylesheets/shared.css" media="screen" rel="Stylesheet" type="text/css" />
 	
 
 
@@ -51,11 +51,11 @@
 		function switchThemes() {
 			console.log("switching themes...");
 			var stylesheetLinkElement = document.getElementById('theme');
-			if (stylesheetLinkElement.getAttribute('href') == 'stylesheets/light.css') {
-				stylesheetLinkElement.setAttribute('href', 'stylesheets/dark.css');
+			if (stylesheetLinkElement.getAttribute('href') == 'assets/stylesheets/light.css') {
+				stylesheetLinkElement.setAttribute('href', 'assets/stylesheets/dark.css');
 			}
 			else {
-				stylesheetLinkElement.setAttribute('href', 'stylesheets/light.css');
+				stylesheetLinkElement.setAttribute('href', 'assets/stylesheets/light.css');
 			}
 		}
 		
