@@ -149,6 +149,7 @@ header h1 {
 
 footer {
   position: absolute;
+width: 100%;
   margin: 20px 0;
   background-color: var(--branding-background-color);
   padding: 10px 20px;
@@ -156,7 +157,6 @@ footer {
 
 footer p {
   margin: 10px auto;
-  width: 100%;
 }
 
 
