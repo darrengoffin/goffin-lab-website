@@ -1,26 +1,33 @@
-
-:root {
-}
-
-
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0
 }
 
 
 body {
-  margin:0;
-  padding:0;
-}
-
-body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
   margin: 0;
   padding: 0;
-  transition: color var(--transition-duration) var(--transition-timing), background-color var(--transition-duration) var(--transition-timing);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
+
+/* Text */
+
+p, li {
+  line-height: 1.5em;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 400;
+}
+
 
 /* Header */
 
