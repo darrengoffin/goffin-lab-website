@@ -84,6 +84,11 @@ code {
 	font-size: 0.95em;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 * Header */
 
 
