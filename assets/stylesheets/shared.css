@@ -1,87 +1,103 @@
+/*
+	This CSS file demonstrates several things that will make supporting themes in web content easier:
+	
+	- Variables for semantic color
+	- Transitions for smooth color transitions
+	- Media queries for prefers-color-scheme
+	- Scrollbar customization, old and new
+*/
+
+
+/*
+	First up, CSS variables. In this example, variables live in a :root pseudo-element, but they can
+	be defined anywhere in the element hierarchy and inherited just like other CSS properties. For
+	more info:
+
+		https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables
+		https://www.w3.org/TR/css-variables/
+*/
 
 :root {
+	/*
+		Here are two different colors that are used below in the header and footer elements.
+		
+		These colors are used independently from the selected theme. The use-case is something like
+		branding elements: you don't want to change an Iconfactory red or a Starbucks green because
+		of a theme switch.
+		
+		The theme-specific variables are found in light.css and dark.css.
+	*/
+	--branding-text-color: rgb(255, 255, 255);
+	--branding-background-color: rgb(229, 36, 30);
+}
+
+/* https://www.w3.org/TR/css-transitions-1/ */
+:root {
+	/*
+		Variables are helpful for a lot of different things that get repeated in your CSS. These two
+		are used for the transition properties defined below.
+		
+		Putting these values in variables ensures that they animations stay in sync (with the same
+		duration and timing function.) It also makes debugging and experimenting easier: you'd probably
+		replace the 1.0s below with 0.25s in a production environment.
+	*/
+	--transition-duration: 1.0s;
+	--transition-timing: ease-in-out;
 }
 
 
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
-
-
-body {
-  margin:0;
-  padding:0;
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  margin: 0;
-  padding: 0;
-  transition: color var(--transition-duration) var(--transition-timing), background-color var(--transition-duration) var(--transition-timing);
-}
-
-/* Header */
-
-
-.header {
-	padding: 20px 40px;
-	box-sizing:border-box;
-	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
-	height: 80px;
-	background-color: var(--header-background-color);
-}
-
-.header .header-limiter {
-	max-width: 1200px;
-	text-align: center;
-	margin: 0 auto;
-}
-
-/* Logo */
-
-.header .header-limiter h1 {
-	float: left;
-	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
-	line-height: 40px;
+	/*
+		For this example, we'll use a the current system UI font:
+		
+			https://furbo.org/2018/03/28/system-fonts-in-css/
+	*/
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    
+    /*
+    	Here's our first use of CSS variables. The --text-color and --background-color are defined in both
+    	light.css and dark.css. The <link id="theme" href="stylesheets ... > determines which one is loaded
+    	as a default. The switchThemes() JavaScript function switches between the stylesheets.
+    	
+    	When the stylesheets switch, the variables in the CSS hierarchy also change, so you'll get new 
+    	colors for the body element.
+    */
+	color: var(--text-color);
+	background-color: var(--background-color);
 	margin: 0;
+	padding: 0;
+	
+	/*
+		When the colors for this element change, it's because the stylesheet was switched. To add some
+		polish (and match any animated changes in the browser itself) the color changes are animated
+		using a CSS transition.
+	*/
+	transition: color var(--transition-duration) var(--transition-timing),
+				background-color var(--transition-duration) var(--transition-timing);
 }
 
-.header .header-limiter h1 span {
-	color: var(--header-subtitle-color);
+code {
+	font-family: "Menlo", "Andale Mono", monospace;
+	font-size: 0.95em;
 }
 
-/* The header links */
-
-.header .header-limiter a {
-        color: var(--header-title-color);
-	text-decoration: none;
+header {
+	/*
+		Since these colors rarely change, there's no need for a transition property. Changes to branding
+		colors can be propagated using a ?cachebuster on the linked stylesheet.
+	*/
+	color: var(--branding-text-color);
+	background-color: var(--branding-background-color);
+	padding: 10px 20px;
 }
 
-.header .header-limiter nav {
-	font:15px Arial, Helvetica, sans-serif;
-	line-height: 40px;
-	float: right;
+header h1 {
+	margin: 10px auto;
+	max-width: 600px;
 }
-
-.header .header-limiter nav a {
-	display: inline-block;
-	padding: 0 5px;
-	text-decoration:none;
-        color: var(--header-link-color);
-	line-height: 1;
-}
-
-.header .header-limiter nav a.selected {
-	background-color: var(--header-link-selected-background-color);
-	color: var(--header-link-selected-color);
-	border-radius: 3px;
-	padding:6px 10px;
-}
-
-
-/* Footer */
 
 footer {
 	margin: 20px 0;
@@ -103,11 +119,20 @@ section {
 
 section h2 {
 	border-bottom: 2px solid var(--accent-color);
+
+	transition: border var(--transition-duration) var(--transition-timing);
 }
 
 section p.highlighted {
  	padding: 10px;
+ 	
+ 	/*
+ 		This is the first element in the DOM hierarchy that doesn't use a color inherited from
+ 		the body element. Because of that, we need to set up another transition for this
+ 		element and its children.
+ 	*/
 	background-color: var(--accent-color);
+	transition: background-color var(--transition-duration) var(--transition-timing);
 }
 
 section button {
@@ -121,17 +146,186 @@ section button {
 	background-size: 24px 24px;
 	background-repeat: no-repeat;
 	background-color: var(--control-color);
+	
+	/*
+		CSS variables are not just limited to colors. Here we're using one to get the URL of
+		the background image: different files are used depending on the theme.
+	*/
+	background-image: var(--configuration-icon);
+	
+	/*
+		Note: There is currently a bug in WebKit where the base URL for the url() is not
+		relative to the stylesheet (per https://drafts.csswg.org/css-values-3/#urls).
+
+			https://bugs.webkit.org/show_bug.cgi?id=190807
+				
+		If you want to see what you're missing, and not have it transition with the theme,
+		here you go:
+		
+	background-image: url('../images/gear_light.png');
+	*/
+
+	/*
+		Note that there's no transition for the background-image: these properties are not
+		animatable. If you really need to do this, you have several options:
+		
+			https://stackoverflow.com/questions/9483364/css3-background-image-transition		
+	*/
+	transition: color var(--transition-duration) var(--transition-timing),
+				background-color var(--transition-duration) var(--transition-timing);
 }
 
+section input[type="text"] {
+	font-size: 1em;
+	font-weight: 400;
+	padding: 10px;
+	color: var(--control-text-color);
+	background-color: var(--control-background-color);
+	border-radius: 4px;
+	border: 2px solid var(--control-color);
+
+	transition: color var(--transition-duration) var(--transition-timing),
+				background-color var(--transition-duration) var(--transition-timing),
+				border-color var(--transition-duration) var(--transition-timing);
+}
+
+section input[type="text"]::placeholder {
+	color: var(--control-disabled-color);
+
+	transition: color var(--transition-duration) var(--transition-timing);
+}
 
 section div.container {
 	height: 200px;
 	overflow: scroll;
 	overflow-x: hidden;
 	background-color: var(--container-color);
+
+	transition: background-color var(--transition-duration) var(--transition-timing);
 }
 
 section div.container p {
 	margin: 10px;
 }
+
+
+/*
+	Now we're at the really new stuff - the prefers-color-scheme media query!
+
+	Initial reports of this internal feature referred to it as "prefers-dark-interface":
+	
+		https://twitter.com/Keithamus/status/1007557906378706944
+	
+	But now it's an official change in Safari with a CSS working group draft:
+	
+		https://trac.webkit.org/changeset/237156/webkit
+		https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme
+	
+	And the tests they run against it in WebKit:
+	
+		https://github.com/WebKit/webkit/blob/master/LayoutTests/css-dark-mode/prefers-color-scheme.html
+	
+	More info:
+	
+		https://github.com/w3c/csswg-drafts/issues/2735	
+		https://bugs.webkit.org/show_bug.cgi?id=190499
+		https://bugs.webkit.org/show_bug.cgi?id=190526
+*/
+
+/*
+	It's important to have a fallback in case the browser doesn't support the new media query:
+*/
+section#media_query {
+	background-color: pink;
+}
+
+/*
+	If the browser supports the media query and the user's system preference is for a light mode,
+	the section will have a yellow background. If their preference is for a dark mode, the background
+	will be rendered in purple.
+	
+	The initial implementation of this feature is controlled with a feature flag: you need to
+	make sure it's enabled in Safari's Develop menu.
+	
+	If you use native controls on the page, take a look at the "supported-color-schemes" meta tag in
+	index.html. This tag is used to automatically switch things like form elements and
+	scrollbars - it's also subject to change since the standards groups are still debating the
+	implementation.
+*/
+@media (prefers-color-scheme: light) {
+    section#media_query {
+        background-color: yellow;
+    }
+}
+@media (prefers-color-scheme: dark) {
+   section#media_query {
+        background-color: purple;
+    }
+}
+
+section#media_query picture {
+	display: inline-block;
+}
+section#media_query picture img {
+	width: 100%;
+	max-width: 350px;
+	height: auto;
+}
+
+/*
+	The ::-webkit-scrollbar pseudo-elements were introduced in 2009 in this blog post:
+	
+		https://webkit.org/blog/363/styling-scrollbars/
+	
+	They're never lost the -webkit- vendor prefix and are buggy. For example, you'll see
+	that they don't animate correctly, and if you use them on the body element they'll
+	appear even if the user has a trackpad or other input device with a mechanical
+	scroll mechanism. The icing on the cake is the CSS working group description:
+	
+	"The WebKit implementation of pseudo-elements for scrollbar is considered to be a
+	feature mistakenly exposed to the web."
+	
+	The code below is an example of how NOT to get nice looking scrollbars.
+*/
+
+section div.container::-webkit-scrollbar {
+	/* DON'T DO THIS */
+	width: 9px;
+}
+
+section div.container::-webkit-scrollbar-track {
+	/* DON'T DO THIS */
+	background-color: var(--control-background-color);
+	transition: background-color var(--transition-duration) var(--transition-timing);
+}
+
+section div.container::-webkit-scrollbar-thumb {
+	/* DON'T DO THIS */
+	border-radius: 4px;
+	background-color: var(--control-disabled-color);
+	transition: background-color var(--transition-duration) var(--transition-timing);
+}
+
+section div.container::-webkit-scrollbar-thumb:hover {
+	/* DON'T DO THIS */
+	background-color: var(--control-color);
+	transition: background-color var(--transition-duration) var(--transition-timing);
+}
+
+/*
+	Instead, we're all waiting for an implementation of the new scrollbar-color and
+	scrollbar-width properties:
+	
+		https://drafts.csswg.org/css-scrollbars-1/#scrollbar-color
+	
+	The first color variable defines the thumb for the scroller, the second is for the track.
+*/
+
+section div.container {
+	scrollbar-color: var(--control-color) var(--control-background-color);
+}
+
+/*
+	That's all for now. I'll try to update this page as the standards evolve.
+*/
 
