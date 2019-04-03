@@ -148,16 +148,17 @@ header h1 {
 }
 
 footer {
-	margin: 20px 0;
-	color: var(--branding-text-color);
-	background-color: var(--branding-background-color);
-	padding: 10px 20px;
+  position: absolute;
+  margin: 20px 0;
+  background-color: var(--branding-background-color);
+  padding: 10px 20px;
 }
 
 footer p {
-	margin: 10px auto;
-	max-width: 600px;
+  margin: 10px auto;
+  width: 100%;
 }
+
 
 section {
 	margin: auto;
@@ -255,125 +256,4 @@ section div.container {
 section div.container p {
 	margin: 10px;
 }
-
-
-/*
-	Now we're at the really new stuff - the prefers-color-scheme media query!
-
-	Initial reports of this internal feature referred to it as "prefers-dark-interface":
-	
-		https://twitter.com/Keithamus/status/1007557906378706944
-	
-	But now it's an official change in Safari with a CSS working group draft:
-	
-		https://trac.webkit.org/changeset/237156/webkit
-		https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme
-	
-	And the tests they run against it in WebKit:
-	
-		https://github.com/WebKit/webkit/blob/master/LayoutTests/css-dark-mode/prefers-color-scheme.html
-	
-	More info:
-	
-		https://github.com/w3c/csswg-drafts/issues/2735	
-		https://bugs.webkit.org/show_bug.cgi?id=190499
-		https://bugs.webkit.org/show_bug.cgi?id=190526
-*/
-
-/*
-	It's important to have a fallback in case the browser doesn't support the new media query:
-*/
-section#media_query {
-	background-color: pink;
-}
-
-/*
-	If the browser supports the media query and the user's system preference is for a light mode,
-	the section will have a yellow background. If their preference is for a dark mode, the background
-	will be rendered in purple.
-	
-	The initial implementation of this feature is controlled with a feature flag: you need to
-	make sure it's enabled in Safari's Develop menu.
-	
-	If you use native controls on the page, take a look at the "supported-color-schemes" meta tag in
-	index.html. This tag is used to automatically switch things like form elements and
-	scrollbars - it's also subject to change since the standards groups are still debating the
-	implementation.
-*/
-@media (prefers-color-scheme: light) {
-    section#media_query {
-        background-color: yellow;
-    }
-}
-@media (prefers-color-scheme: dark) {
-   section#media_query {
-        background-color: purple;
-    }
-}
-
-section#media_query picture {
-	display: inline-block;
-}
-section#media_query picture img {
-	width: 100%;
-	max-width: 350px;
-	height: auto;
-}
-
-/*
-	The ::-webkit-scrollbar pseudo-elements were introduced in 2009 in this blog post:
-	
-		https://webkit.org/blog/363/styling-scrollbars/
-	
-	They're never lost the -webkit- vendor prefix and are buggy. For example, you'll see
-	that they don't animate correctly, and if you use them on the body element they'll
-	appear even if the user has a trackpad or other input device with a mechanical
-	scroll mechanism. The icing on the cake is the CSS working group description:
-	
-	"The WebKit implementation of pseudo-elements for scrollbar is considered to be a
-	feature mistakenly exposed to the web."
-	
-	The code below is an example of how NOT to get nice looking scrollbars.
-*/
-
-section div.container::-webkit-scrollbar {
-	/* DON'T DO THIS */
-	width: 9px;
-}
-
-section div.container::-webkit-scrollbar-track {
-	/* DON'T DO THIS */
-	background-color: var(--control-background-color);
-	transition: background-color var(--transition-duration) var(--transition-timing);
-}
-
-section div.container::-webkit-scrollbar-thumb {
-	/* DON'T DO THIS */
-	border-radius: 4px;
-	background-color: var(--control-disabled-color);
-	transition: background-color var(--transition-duration) var(--transition-timing);
-}
-
-section div.container::-webkit-scrollbar-thumb:hover {
-	/* DON'T DO THIS */
-	background-color: var(--control-color);
-	transition: background-color var(--transition-duration) var(--transition-timing);
-}
-
-/*
-	Instead, we're all waiting for an implementation of the new scrollbar-color and
-	scrollbar-width properties:
-	
-		https://drafts.csswg.org/css-scrollbars-1/#scrollbar-color
-	
-	The first color variable defines the thumb for the scroller, the second is for the track.
-*/
-
-section div.container {
-	scrollbar-color: var(--control-color) var(--control-background-color);
-}
-
-/*
-	That's all for now. I'll try to update this page as the standards evolve.
-*/
 
