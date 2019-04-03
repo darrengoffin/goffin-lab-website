@@ -1,52 +1,13 @@
-/*
-	This CSS file demonstrates several things that will make supporting themes in web content easier:
-	
-	- Variables for semantic color
-	- Transitions for smooth color transitions
-	- Media queries for prefers-color-scheme
-	- Scrollbar customization, old and new
-*/
-
-
-/*
-	First up, CSS variables. In this example, variables live in a :root pseudo-element, but they can
-	be defined anywhere in the element hierarchy and inherited just like other CSS properties. For
-	more info:
-
-		https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables
-		https://www.w3.org/TR/css-variables/
-*/
-
 :root {
-	/*
-		Here are two different colors that are used below in the header and footer elements.
-		
-		These colors are used independently from the selected theme. The use-case is something like
-		branding elements: you don't want to change an Iconfactory red or a Starbucks green because
-		of a theme switch.
-		
-		The theme-specific variables are found in light.css and dark.css.
-	*/
-	--branding-text-color: rgb(255, 255, 255);
-	--branding-background-color: rgb(229, 36, 30);
 }
-
-/* https://www.w3.org/TR/css-transitions-1/ */
-:root {
-	/*
-		Variables are helpful for a lot of different things that get repeated in your CSS. These two
-		are used for the transition properties defined below.
-		
-		Putting these values in variables ensures that they animations stay in sync (with the same
-		duration and timing function.) It also makes debugging and experimenting easier: you'd probably
-		replace the 1.0s below with 0.25s in a production environment.
-	*/
-	--transition-duration: 1.0s;
-	--transition-timing: ease-in-out;
-}
-
 
 html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin:0;
+  padding:0;
 }
 
 body {
