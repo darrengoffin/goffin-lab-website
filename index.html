@@ -7,7 +7,20 @@
 <meta name="supported-color-schemes" content="light dark">	
 <link id="theme" href="stylesheets/light.css" media="screen" rel="Stylesheet" type="text/css" />
 <link href="assets/stylesheets/shared.css" media="screen" rel="Stylesheet" type="text/css" />
+<script type="text/javascript">
 	
+		function switchThemes() {
+			console.log("switching themes...");
+			var stylesheetLinkElement = document.getElementById('theme');
+			if (stylesheetLinkElement.getAttribute('href') == 'assets/stylesheets/light.css') {
+				stylesheetLinkElement.setAttribute('href', 'assets/stylesheets/dark.css');
+			}
+			else {
+				stylesheetLinkElement.setAttribute('href', 'assets/stylesheets/light.css');
+			}
+		}
+		
+	</script>	
 
 
 </head>
@@ -46,20 +59,7 @@
 <footer>
     <button onclick="switchThemes();">Click to Switch Themes</button>
 
-	<script type="text/javascript">
 	
-		function switchThemes() {
-			console.log("switching themes...");
-			var stylesheetLinkElement = document.getElementById('theme');
-			if (stylesheetLinkElement.getAttribute('href') == 'assets/stylesheets/light.css') {
-				stylesheetLinkElement.setAttribute('href', 'assets/stylesheets/dark.css');
-			}
-			else {
-				stylesheetLinkElement.setAttribute('href', 'assets/stylesheets/light.css');
-			}
-		}
-		
-	</script>
 </footer>
 
 </body>
