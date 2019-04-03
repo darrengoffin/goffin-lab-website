@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-
-<title>Goffin lab - People</title>
-<meta name="supported-color-schemes" content="light dark">	
-<link id="theme" href="stylesheets/light.css" media="screen" rel="Stylesheet" type="text/css" />
+<title>GoffinLab</title>
+<meta name="supported-color-schemes" content="light dark">
+	
+<link id="theme" href="assets/stylesheets/light.css" media="screen" rel="Stylesheet" type="text/css" />
 <link href="assets/stylesheets/shared.css" media="screen" rel="Stylesheet" type="text/css" />
-<link id="theme" href="stylesheets/light.css" media="screen" rel="Stylesheet" type="text/css" />
+	
 <script type="text/javascript">
 	
-		/*
-			This is what kicks off the magic: the page starts off using CSS variables in light.css. The
-			switchThemes() function changes the URL to dark.css. That, in turn, propagates color changes
-			and transitions throughout shared.css.
-		*/
 		function switchThemes() {
 			console.log("switching themes...");
 			var stylesheetLinkElement = document.getElementById('theme');
@@ -30,52 +24,86 @@
 			You can check the prefers-color-scheme media query with JavaScript and update the page
 			accordingly. This would be handy if you're doing configuration on the page.
 		*/
-	}
-	
+		function checkPrefersColorScheme() {
+			console.log("checking prefers-color-scheme..");
+			var status = 'not present'
+			var mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+			if (mediaQueryList.matches) {
+				status = '"dark"';
+			}
+			else {
+				mediaQueryList = window.matchMedia('(prefers-color-scheme: light)');
+				if (mediaQueryList.matches) {
+					status = '"light"';
+				}
+			}
+			var statusElement = document.getElementById('color_scheme_status');
+			statusElement.innerHTML = 'Your browser\'s <code>prefers-color-scheme</code> is ' + status + '.';
+			
+			/*
+				The media query list can have a listener which will be called when the user switches
+				between light and dark modes. It works just like addEventListener() because it inherits
+				from EventTarget.
+			*/
+			mediaQueryList.addListener( function(mql) {
+				console.log('event listener for ' + mql.media + ' changed to ' + mql.matches);	
+				var status = 'not defined';
+				if (mql.media == '(prefers-color-scheme: light)') {
+					status = (mql.matches ? '"light"' : '"dark"');
+				}
+				else if (mql.media == '(prefers-color-scheme: dark)') {
+					status = (mql.matches ? '"dark"' : '"light"');
+				}
+				var statusElement = document.getElementById('color_scheme_status');
+				statusElement.innerHTML = 'Your browser\'s <code>prefers-color-scheme</code> changed to ' + status + '.';
+			});
+		}
 	</script>
-
-	
-
 
 </head>
 
-<body>
-
-<header class="header">
-
-  <div class="header-limiter">
-    <h1><a href="#">Goffin<span>lab</span></a></h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#" class="selected">People</a>
-      <a href="/publications/">Publications</a>
-      <a href="#">News</a>
-      <a href="#">Contact</a>
-    </nav>
-  </div>
-
-</header>
+<body onload="checkPrefersColorScheme();">
+	<header>
+		<h1>Goffin Lab</h1>
+	</header>
 	
-<section id="text">
+	<section id="text">
+		<h2>Text</h2>
+		<p>
+			This text color should change when you click on the <strong>Switch Themes</strong> button below. The <code>background-color</code> of the body and the <code>border-color</code> used on the header above will change, too. This can be automated with media queries.
+		</p>
+		<p class="highlighted">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</section>
 
-<h2>Text</h2>
-<p>
-    This text color should change when you click on the <strong>Switch Themes</strong> button below. The background-color of the body and the border-color used on the header above will change, too. This can be automated with media queries.
-</p>
+	<section id="controls">
+		<h2>Controls</h2>
+		<p>
+			These are two common controls that will change with the <strong>Switch Themes</strong> button.
+		</p>
+		<button onclick="switchThemes();">Click to Switch Themes</button>
+		<input type="text" placeholder="Enter some text to test"/>
+	</section>
 
-<p class="highlighted">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-
-</section>
+	<section id="scrollbars">
+		<h2>Scrollbars</h2>
+		<p>
+			Scrollbars change with the theme, but are buggy because the technique is almost ten years old and not a standard. But help is on the way.
+		</p>
+		<div class="container">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<p>
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+			</p>
+		</div>
+	</section>
 
 	
-<footer>
-    <button onclick="switchThemes();">Click to Switch Themes</button>
 
-	
-</footer>
-
+	<footer>
+	</footer>
 </body>
 </html>
-
