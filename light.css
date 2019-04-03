@@ -1,0 +1,26 @@
+
+:root {
+  --text-color: black;
+  --background-color: white;
+
+  --container-color: whitesmoke;
+
+  --accent-color: skyblue;
+
+  --control-color: skyblue;
+  --control-text-color: black;
+  --control-disabled-color: lightblue;
+  --control-background-color: whitesmoke;
+
+  --header-background-color: #fff;
+  --header-title-color: #5c616a;
+  --header-subtitle-color: #5383d3;
+  --header-link-color: #5c616a;
+  --header-link-selected-color: #ffffff;
+  --header-link-selected-background-color: #86a3d5;
+
+
+
+	--configuration-icon: url('../images/gear_light.png');
+}
+

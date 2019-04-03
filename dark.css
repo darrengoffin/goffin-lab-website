@@ -1,0 +1,27 @@
+:root {
+	--text-color: white;
+	--background-color: black;
+
+	--container-color: black;
+
+	--accent-color: darkorange;
+
+	--control-color: darkorange;
+	--control-text-color: cornsilk;
+	--control-disabled-color: silver;
+	--control-background-color: black;
+
+
+  --header-background-color: black;
+  --header-title-color: #ffffff;
+  --header-subtitle-color: #5383d3;
+  --header-link-color: #ffffff;
+  --header-link-selected-color: #608bd2;
+  --header-link-selected-background-color: #292c2f;
+
+
+	
+  --configuration-icon: url('../images/gear_dark.png');
+}
+
+
