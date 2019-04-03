@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-<meta charset="utf-8" />
-  
+
 <title>Goffin lab - People</title>
 <meta name="supported-color-schemes" content="light dark">	
 <link id="theme" href="stylesheets/light.css" media="screen" rel="Stylesheet" type="text/css" />
-<link href="assets/stylesheets/shared.css" media="screen" rel="Stylesheet" type="text/css" />
+<link href="stylesheets/shared.css" media="screen" rel="Stylesheet" type="text/css" />
 	
-  
+
+
 </head>
 
 <body>
@@ -16,33 +17,32 @@
 <header class="header">
 
   <div class="header-limiter">
-    <h1><a href="https://goffinlab.com/research/">Goffin<span>lab</span></a></h1>
+    <h1><a href="#">Goffin<span>lab</span></a></h1>
     <nav>
-      <a href="https://goffinlab.com/research/">Home</a>
-      <a href=/lab-members/>People</a>
+      <a href="#">Home</a>
+      <a href="#" class="selected">People</a>
       <a href="/publications/">Publications</a>
-      <a href=/news/>News</a>
-      <a href=/contact/>Contact</a>
+      <a href="#">News</a>
+      <a href="#">Contact</a>
     </nav>
   </div>
 
 </header>
 	
+<section id="text">
 
-<main id="main" class="main" role="main" data-page-type="overview">
+<h2>Text</h2>
+<p>
+    This text color should change when you click on the <strong>Switch Themes</strong> button below. The background-color of the body and the border-color used on the header above will change, too. This can be automated with media queries.
+</p>
 
-  <article class="page">
+<p class="highlighted">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
 
-    <h1 id="welcome-to-the-goffin-lab">Welcome to the Goffin lab</h1>
-<hr />
-<p>There are over 7 billion people on this planet. Yet we are all unique. There is no one else like you. Our uniqueness stems from how our genes and experiences effect activity in the brain. Within your brain there are around 100 billion neurons that are engaged in complex electrical and chemical exchanges with one another. As the activity of these neurons change, so do you. We are interested in understanding how specific neurons and neuronal circuits regulate proper brain function and behaviour. In addition, a major focus of our work is understanding how these neuronal circuits are affected in the debilitating neurological disorder Rett syndrome.</p>
+</section>
 
-
-
-</article>
-  </main> 
-  <script src="/assets/javascripts/application.js"></script>
-
+	
 <footer>
     <button onclick="switchThemes();">Click to Switch Themes</button>
 
@@ -51,19 +51,16 @@
 		function switchThemes() {
 			console.log("switching themes...");
 			var stylesheetLinkElement = document.getElementById('theme');
-			if (stylesheetLinkElement.getAttribute('href') == 'assets/stylesheets/light.css') {
-				stylesheetLinkElement.setAttribute('href', 'assets/stylesheets/dark.css');
+			if (stylesheetLinkElement.getAttribute('href') == 'stylesheets/light.css') {
+				stylesheetLinkElement.setAttribute('href', 'stylesheets/dark.css');
 			}
 			else {
-				stylesheetLinkElement.setAttribute('href', 'assets/stylesheets/light.css');
+				stylesheetLinkElement.setAttribute('href', 'stylesheets/light.css');
 			}
 		}
 		
 	</script>
 </footer>
-
-</body>
-</html>
 
 </body>
 </html>
