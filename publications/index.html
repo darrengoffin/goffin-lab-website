@@ -59,6 +59,24 @@
 
 </article>
   </main> 
+  
+  <footer>
+	<script type="text/javascript">
+	
+		function switchThemes() {
+			console.log("switching themes...");
+			var stylesheetLinkElement = document.getElementById('theme');
+			if (stylesheetLinkElement.getAttribute('href') == 'assets/stylesheets/light.css') {
+				stylesheetLinkElement.setAttribute('href', 'assets/stylesheets/dark.css');
+			}
+			else {
+				stylesheetLinkElement.setAttribute('href', 'assets/stylesheets/light.css');
+			}
+		}
+		
+	</script>
+</footer>
+  
   <script src="/assets/javascripts/application.js"></script>
 
 </body>
