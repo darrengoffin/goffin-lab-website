@@ -1,68 +1,18 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-<title>GoffinLab</title>
-<meta name="supported-color-schemes" content="light dark">
+
+<title>Goffin lab - People</title>
+<meta name="supported-color-schemes" content="light dark">	
+<link id="theme" href="stylesheets/light.css" media="screen" rel="Stylesheet" type="text/css" />
+<link href="stylesheets/shared.css" media="screen" rel="Stylesheet" type="text/css" />
 	
-<link id="theme" href="assets/stylesheets/light.css" media="screen" rel="Stylesheet" type="text/css" />
-<link href="assets/stylesheets/shared.css" media="screen" rel="Stylesheet" type="text/css" />
-	
-<script type="text/javascript">
-	
-function switchThemes() {
-			console.log("switching themes...");
-			var stylesheetLinkElement = document.getElementById('theme');
-			if (stylesheetLinkElement.getAttribute('href') == 'assets/stylesheets/light.css') {
-				stylesheetLinkElement.setAttribute('href', 'assets/stylesheets/dark.css');
-			}
-			else {
-				stylesheetLinkElement.setAttribute('href', 'assets/stylesheets/light.css');
-			}
-		}
-		
-		/*
-			You can check the prefers-color-scheme media query with JavaScript and update the page
-			accordingly. This would be handy if you're doing configuration on the page.
-		*/
-		function checkPrefersColorScheme() {
-			console.log("checking prefers-color-scheme..");
-			var status = 'not present'
-			var mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
-			if (mediaQueryList.matches) {
-				status = '"dark"';
-			}
-			else {
-				mediaQueryList = window.matchMedia('(prefers-color-scheme: light)');
-				if (mediaQueryList.matches) {
-					status = '"light"';
-				}
-			}
-			var statusElement = document.getElementById('color_scheme_status');
-			statusElement.innerHTML = 'Your browser\'s <code>prefers-color-scheme</code> is ' + status + '.';
-			
-			/*
-				The media query list can have a listener which will be called when the user switches
-				between light and dark modes. It works just like addEventListener() because it inherits
-				from EventTarget.
-			*/
-			mediaQueryList.addListener( function(mql) {
-				console.log('event listener for ' + mql.media + ' changed to ' + mql.matches);	
-				var status = 'not defined';
-				if (mql.media == '(prefers-color-scheme: light)') {
-					status = (mql.matches ? '"light"' : '"dark"');
-				}
-				else if (mql.media == '(prefers-color-scheme: dark)') {
-					status = (mql.matches ? '"dark"' : '"light"');
-				}
-				var statusElement = document.getElementById('color_scheme_status');
-				statusElement.innerHTML = 'Your browser\'s <code>prefers-color-scheme</code> changed to ' + status + '.';
-			});
-		}
-	</script>
+
 
 </head>
 
-<body onload="checkPrefersColorScheme();">
+<body>
 
 <header class="header">
 
@@ -95,9 +45,23 @@ function switchThemes() {
 	
 <footer>
     <button onclick="switchThemes();">Click to Switch Themes</button>
+
+	<script type="text/javascript">
+	
+		function switchThemes() {
+			console.log("switching themes...");
+			var stylesheetLinkElement = document.getElementById('theme');
+			if (stylesheetLinkElement.getAttribute('href') == 'stylesheets/light.css') {
+				stylesheetLinkElement.setAttribute('href', 'stylesheets/dark.css');
+			}
+			else {
+				stylesheetLinkElement.setAttribute('href', 'stylesheets/light.css');
+			}
+		}
+		
+	</script>
 </footer>
 
 </body>
 </html>
-
 
