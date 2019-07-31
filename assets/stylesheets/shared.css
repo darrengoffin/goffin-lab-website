@@ -102,8 +102,7 @@ body, input, textarea, select, button {
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
-    width: 980px
-    width: 66.66667%;
+    width: 50.0%
 	
 }
 
@@ -111,16 +110,14 @@ body, input, textarea, select, button {
     .section .section-content {
         margin-left: auto;
         margin-right: auto;
-        width: 692px;
-        width: 83.33333%
+        width: 50.0%
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section .section-content {
         margin-left: auto;
         margin-right: auto;
-        width: 87.5%;
 	width: 100%
     }
 }
