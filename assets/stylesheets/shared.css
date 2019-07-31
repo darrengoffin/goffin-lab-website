@@ -95,6 +95,16 @@ main {
 	margin: 0.25em 0;
 }
 
+#toc {
+  font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 0.7em;
+}
+
+#menu {
+  margin: 0.5em 0 0.25em 0;
+  padding-left: 0;
+}
+
 /* Logo */
 
 #banner h1 {
