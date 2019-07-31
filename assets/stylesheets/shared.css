@@ -98,7 +98,9 @@ main {
 /* Logo */
 
 #banner h1 {
-	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
+	font-style: normal;
+	font-size: 28px;
 	line-height: 40px;
 	margin: 0;
 }
