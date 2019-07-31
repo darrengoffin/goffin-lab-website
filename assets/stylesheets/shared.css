@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  font-size: 16px;
+/*   font-size: 16px; */
   line-height: 1.5em;
   font-weight: 400;
   font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;  font-size: 17px;
@@ -45,7 +45,7 @@ body {
 /* Text */
 
 .post-content p {
-  font-size: 22px;
+/*   font-size: 22px; */
   line-height: 1.5;
   margin-bottom:60px
 }
@@ -87,7 +87,7 @@ main {
 
 #toc {
   font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 0.7em;
+/*   font-size: 0.7em; */
 }
 
 #menu {
@@ -100,12 +100,10 @@ main {
   padding: 0 0.5em;
 }
 
-/* Logo */
-
 #banner h1 {
 	font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
 	font-style: normal;
-	font-size: 28px;
+/* 	font-size: 28px; */
 	line-height: 40px;
 	margin: 0;
 }
@@ -113,8 +111,6 @@ main {
 #banner h1 span {
 	color: var(--header-subtitle-color);
 }
-
-/* The header links */
 
 #banner a {
         color: var(--header-title-color);
@@ -134,27 +130,4 @@ main {
 	color: var(--header-link-selected-color);
 	border-radius: 3px;
 	padding:6px 10px;
-}
-
-/* Responsive text size */
-
-@media screen and (min-width: 640px) {
-
-  body {
-    font-size: 1.125em;
-  }
-}
-
-@media screen and (min-width: 768px) {
-
-  body {
-    font-size: 1.25em;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-
-  body {
-    font-size: 1.5em;
-  }
 }
