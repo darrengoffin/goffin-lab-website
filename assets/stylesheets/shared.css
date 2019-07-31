@@ -35,36 +35,61 @@ body {
 
 /* Text */
 
-.post-content p {
+.section-content p {
 /*   font-size: 22px; */
   line-height: 1.5;
   margin-bottom:60px
 }
 
-.post-content h1 {
+.section-content h1 {
     font-size: 32px;
     line-height: 1.0;
     font-weight: 500;
 }
 
-@media only screen and (max-width: 1068px) {
-    .post-content h1 {
-    font-size: 28px;
-    line-height: 1.1;
+.section-content h2 {
+    font-size: 24px;
+    line-height: 1.2;
     font-weight: 500;
-    }
 }
 
-@media only screen and (max-width: 735px) {
-    .post-content h1 {        font-size: 24px;
+@media only screen and (max-width: 1068px) {
+    .section-content h1 {
+        font-size: 28px;
+        line-height: 1.1;
+        font-weight: 500;
+    }
+	
+    .section-content h2 {
+        font-size: 22px;
         line-height: 1.2;
         font-weight: 500;
     }
 }
 
-
+@media only screen and (max-width: 735px) {
+    .section-content h1 {        
+	font-size: 24px;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+	
+    .section-content h2 {
+        font-size: 19px;
+        line-height: 1.25;
+        font-weight: 500;
+    }
+}
 
 /* Content */
+
+.section .section-content {
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px
+}
 
 /* Hack for IE 9, 10 and 11. */
 main {
