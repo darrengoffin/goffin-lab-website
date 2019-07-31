@@ -62,7 +62,7 @@ body, input, textarea, select, button {
     font-weight: 500;
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024) {
     .section-content h1 {
         font-size: 28px;
         line-height: 1.1;
@@ -76,7 +76,7 @@ body, input, textarea, select, button {
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768) {
     .section-content h1 {        
 	font-size: 24px;
         line-height: 1.2;
@@ -106,11 +106,11 @@ body, input, textarea, select, button {
 	
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024) {
     .section .section-content {
         margin-left: auto;
         margin-right: auto;
-        width: 50.0%
+        width: 100.0%
     }
 }
 
