@@ -24,11 +24,6 @@ html, body {
   height: 100%
 }
 
-p, li {
-  line-height: 1.5em;
-  font-weight: 400
-}
-
 body {
   color: var(--text-color);
 }
@@ -43,12 +38,6 @@ body, input, textarea, select, button {
 }
 
 /* Text */
-
-.section-content p {
-/*   font-size: 22px; */
-  line-height: 1.5;
-  margin-bottom:60px
-}
 
 .section-content h1 {
     font-size: 32px;
