@@ -91,14 +91,14 @@ main {
 	background-color: var(--header-background-color);
 }
 
-.header {
+#banner  {
 	padding: 20px 40px;
 	box-sizing:border-box;
 	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
 	height: 80px;
 }
 
-#banner .header-limiter {
+.header-limiter {
 	max-width: 1200px;
 	text-align: center;
 	margin: 0 auto;
@@ -113,23 +113,23 @@ main {
 	margin: 0;
 }
 
-#banner .header-limiter h1 span {
+.header-limiter h1 span {
 	color: var(--header-subtitle-color);
 }
 
 /* The header links */
 
-#banner .header-limiter a {
+.header-limiter a {
         color: var(--header-title-color);
 	text-decoration: none;
 }
 
-#banner .header-limiter nav {
+.header-limiter nav {
 
 	float: right;
 }
 
-#banner .header-limiter nav a {
+.header-limiter nav a {
 	display: inline-block;
 	padding: 0 5px;
 	text-decoration:none;
@@ -137,7 +137,7 @@ main {
 	line-height: 1;
 }
 
-#banner .header-limiter nav a.selected {
+.header-limiter nav a.selected {
 	background-color: var(--header-link-selected-background-color);
 	color: var(--header-link-selected-color);
 	border-radius: 3px;
