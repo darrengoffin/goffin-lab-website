@@ -126,11 +126,6 @@ main {
 	text-decoration: none;
 }
 
-#banner nav {
-
-	float: right;
-}
-
 #banner nav a {
 	display: inline-block;
 	padding: 0 5px;
