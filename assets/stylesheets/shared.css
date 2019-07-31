@@ -136,6 +136,14 @@ body, input, textarea, select, button {
     }
 }
 
+@media only screen and (max-width: 640px) {
+    .section .section-content {
+        margin-left: auto;
+        margin-right: auto;
+	width: 100%
+    }
+}
+
 /* Hack for IE 9, 10 and 11. */
 main {
   display: block;
