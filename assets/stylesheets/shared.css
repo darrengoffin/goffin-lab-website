@@ -3,6 +3,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;  font-size: 17px;
+  quotes: "“" "”"
 }
 
 body {
@@ -10,18 +11,11 @@ body {
   padding: 0
 }
 
-ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr {
-  margin: 0;
-  padding:0
-}
-
 html, body {
   height: 100%
 }
 
 html {
-  font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;  font-size: 17px;
-  quotes: "“" "”"
 }
 
 body {
