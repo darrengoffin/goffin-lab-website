@@ -91,6 +91,30 @@ body {
     width: 980px
 }
 
+@media only screen and (min-width: 1442px) {
+    .section .section-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 980px
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section .section-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 692px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section .section-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 87.5%
+    }
+}
+
 /* Hack for IE 9, 10 and 11. */
 main {
   display: block;
@@ -99,10 +123,6 @@ main {
 #content {
   margin: 0 auto;
   padding: 0.5em 1em;
-}
-
-#content {
-  max-width: 32em;
 }
 
 #banner, #sidebar, #addendum {
