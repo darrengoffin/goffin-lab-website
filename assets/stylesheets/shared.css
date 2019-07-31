@@ -3,7 +3,6 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;  font-size: 17px;
-  quotes: "“" "”"
 }
 
 body {
@@ -15,17 +14,16 @@ html, body {
   height: 100%
 }
 
-html {
+body {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
+    font-style: normal;
+    line-height: 1.5em;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-body {
-/*   font-size: 16px; */
-  line-height: 1.5em;
-  font-weight: 400;
-  font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;  font-size: 17px;
-  background-color: var(--background-color);
-  font-style:normal
-}
 
 p, li {
   line-height: 1.5em;
