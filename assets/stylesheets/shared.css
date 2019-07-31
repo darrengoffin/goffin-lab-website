@@ -1,5 +1,7 @@
 html {
-  background-color: var(--background-color);
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;  font-size: 17px;
 }
 
@@ -8,8 +10,28 @@ body {
   padding: 0
 }
 
+ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr {
+  margin: 0;
+  padding:0
+}
+
 html, body {
   height: 100%
+}
+
+html {
+  font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;  font-size: 17px;
+  font-size: 106.25%;
+  quotes: "“" "”"
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;  font-size: 17px;
+  background-color: var(--background-color);
+  font-style:normal
 }
 
 p, li {
