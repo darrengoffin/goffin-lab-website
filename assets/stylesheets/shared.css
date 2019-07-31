@@ -98,7 +98,7 @@ main {
 	height: 80px;
 }
 
-.header-limiter {
+#banner {
 	max-width: 1200px;
 	text-align: center;
 	margin: 0 auto;
@@ -106,30 +106,30 @@ main {
 
 /* Logo */
 
-#banner .header-limiter h1 {
+#banner h1 {
 	float: left;
 	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
 	line-height: 40px;
 	margin: 0;
 }
 
-.header-limiter h1 span {
+#banner h1 span {
 	color: var(--header-subtitle-color);
 }
 
 /* The header links */
 
-.header-limiter a {
+#banner a {
         color: var(--header-title-color);
 	text-decoration: none;
 }
 
-.header-limiter nav {
+#banner nav {
 
 	float: right;
 }
 
-.header-limiter nav a {
+#banner nav a {
 	display: inline-block;
 	padding: 0 5px;
 	text-decoration:none;
@@ -137,7 +137,7 @@ main {
 	line-height: 1;
 }
 
-.header-limiter nav a.selected {
+#banner nav a.selected {
 	background-color: var(--header-link-selected-background-color);
 	color: var(--header-link-selected-color);
 	border-radius: 3px;
