@@ -87,8 +87,8 @@ main {
 #banner {
 	margin: 0 auto;
 	padding: 0.5em 1em;
-	
 	background-color: var(--header-background-color);
+        text-align: center;
 }
 
 #banner  {
@@ -98,9 +98,6 @@ main {
 }
 
 #banner {
-	max-width: 1200px;
-	text-align: center;
-	margin: 0 auto;
 }
 
 /* Logo */
