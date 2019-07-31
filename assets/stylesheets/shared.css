@@ -91,17 +91,13 @@ main {
         text-align: center;
 }
 
-#banner  {
-	box-sizing:border-box;
-}
-
-#banner {
+#title {
+	margin: 0.25em 0;
 }
 
 /* Logo */
 
 #banner h1 {
-	float: left;
 	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
 	line-height: 40px;
 	margin: 0;
