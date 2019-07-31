@@ -84,13 +84,18 @@ main {
 
 /* Header */
 
+#banner {
+	margin: 0 auto;
+	padding: 0.5em 1em;
+	
+	background-color: var(--header-background-color);
+}
 
 .header {
 	padding: 20px 40px;
 	box-sizing:border-box;
 	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
 	height: 80px;
-	background-color: var(--header-background-color);
 }
 
 .header .header-limiter {
