@@ -24,7 +24,12 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 [type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+html, 
+body {
+    font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;  
+    font-size: 17px;
+    line-height: 1.5;
+}
 
 h1 {
     font-size: 36px;
