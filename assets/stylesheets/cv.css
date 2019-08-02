@@ -56,3 +56,12 @@ h1, h2, h3, h4, h5, h6 {
   margin:1.3em 0;
 }
 
+/* Header Title */
+.header {
+  padding: 1.0em;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
