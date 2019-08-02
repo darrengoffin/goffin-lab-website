@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* The navigation bar */
-.navbar {
+.header {
   position: fixed;
   overflow: hidden;
   background-color: #333;
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Links inside the navbar */
 .navbar a {
-  float: left;
+  float: center;
   display: block;
   color: #f2f2f2;
   text-align: center;
