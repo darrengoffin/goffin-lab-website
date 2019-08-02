@@ -53,7 +53,7 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight:400;
-  margin:0 0;
+  margin:0.3em 0;
 }
 
 /* The navigation bar */
@@ -70,7 +70,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar ul {
   display:inline-block;
 }
-
 
 /* Links inside the navbar */
 .navbar a {
