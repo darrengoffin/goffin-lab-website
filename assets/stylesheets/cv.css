@@ -24,7 +24,7 @@ html, body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   font-size:17px;
   line-height:1.5;
-  color:blue;
+  color:green;
 }
 
 h1 {
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header Title */
 .header {
-  margin:0.3em 0;
+  margin:0 0;
   text-align: center;
   background: #1abc9c;
   color: white;
