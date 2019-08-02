@@ -20,15 +20,10 @@ body {
 
 /* Main CSS */
 
-html,body {
-  font-family:Verdana,sans-serif;
-  font-family: -apple-system,system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+html, body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   font-size:17px;
   line-height:1.5;
-}
-
-html {
-  overflow-x:hidden;
 }
 
 h1 {
@@ -55,37 +50,8 @@ h6 {
   font-size:16px;
 }
 
-h1, h2, h3, h4, h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight:400;
-  margin:10px 0;
-}
-
-hr{border:0;border-top:1px solid #eee;margin:20px 0}
-
-ul {
-  list-style-type:none;
-  padding:0;margin:0;
-}
-
-ul li {
-  padding:8px 16px;
-  border-bottom:1px solid #ddd;
-}
-
-ul li:last-child {
-  border-bottom:none;
-}
-
-
-
-.w3-main,#main{transition:margin-left .4s}
-
-
-
-
-.container:after, .w3-container:before {
-  content:"";
-  display:table;
-  clear:both
+  margin:0 0;
 }
 
