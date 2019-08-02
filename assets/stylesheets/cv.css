@@ -24,7 +24,7 @@ html, body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   font-size:17px;
   line-height:1.5;
-  color:blue;
+  color:red;
 }
 
 h1 {
@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header Title */
 .header {
+  margin:0.3em 0;
   text-align: center;
   background: #1abc9c;
   color: white;
@@ -74,3 +75,18 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  color: gray;
+}
