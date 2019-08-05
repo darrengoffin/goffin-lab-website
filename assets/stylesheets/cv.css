@@ -39,7 +39,7 @@ nav ul li {
 nav ul li a {
   color: white;
   color: var(--header-title-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 nav ul li a span {
@@ -66,7 +66,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 1024x) {
+@media only screen and (max-width: 1024px) {
   main {
     max-width: 80%;
   }
