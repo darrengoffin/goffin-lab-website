@@ -65,8 +65,16 @@ main {
   }
 }
 
+@media only screen and (max-width: 1024x) {
+  main {
+    max-width: 80%;
+  }
+}
+
+(max-device-width : 1024px) 
+
 article {
-  background-color:yellow;
+  background-color:pink;
 }
 
 article section {
