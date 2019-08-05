@@ -37,3 +37,7 @@ html {
 .title {
   color: grey;
 }
+
+img {
+  width:auto;
+}
