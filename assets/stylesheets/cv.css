@@ -54,7 +54,7 @@ nav ul li a:hover {
 main {
   margin: auto auto;
   margin-top: 4em;
-  padding: 0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   max-width: 60%;
 }
 
