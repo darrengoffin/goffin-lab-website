@@ -59,7 +59,7 @@ main {
   margin-top: 4em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   main {
     max-width: 100%;
     margin: auto: 1em;
