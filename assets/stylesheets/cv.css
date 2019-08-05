@@ -28,9 +28,19 @@ nav {
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    cursor: default;
+    width: auto;
+    height: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select:none;
 }
 
 nav ul li {
