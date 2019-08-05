@@ -39,6 +39,7 @@ html {
 }
 
 img {
-  width:100%;
-     padding-top: 100%; /* 1:1 Aspect Ratio */
+  display: block;
+  width: 100%;
+  height: auto;
 }
