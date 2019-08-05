@@ -48,3 +48,27 @@ nav ul li a span {
 nav ul li a:hover {
   color: grey;
 }
+
+/* Main content area */
+
+article {
+
+}
+
+article section {
+  background-color: yellow;
+}
+
+article h1 {
+  font-size: 32px;
+  padding: 0.5em 0;
+}
+
+article h2 {
+  font-size: 24px;
+  padding-bottom: 0.5em;
+}
+
+article p {
+  line-height: 1.5em;
+}
