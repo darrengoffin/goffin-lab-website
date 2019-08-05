@@ -95,3 +95,11 @@ article h2 {
 article p {
   line-height: 1.5em;
 }
+
+article a {
+  color:#0070c9;
+}
+
+article a:link, a:visited {
+  text-decoration:none;
+}
