@@ -1,101 +1,47 @@
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-
-html {
-  box-sizing: border-box;
-}
-  
-*, *:before,*:after {
-  box-sizing:inherit
-}
-  
-html {
-  -ms-text-size-adjust:100%;
-  -webkit-text-size-adjust:100%;
-}
-  
 body {
-  margin:0
+  margin:0;
+  padding:0;
 }
 
-
-/* Main CSS */
-
-html, body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  font-size:17px;
-  line-height:1.5;
-  color:green;
+html body {
+  font-size: 17px;
 }
 
-h1 {
-  font-size:36px;
-}
+/* Top navigation bar */
 
-h2 {
-  font-size:30px;
-}
-
-h3 {
-  font-size:24px;
-}
-
-h4 {
-  font-size:20px;
-}
-
-h5 {
-  font-size:18px;
-}
-
-h6 {
-  font-size:16px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight:400;
-  margin:0.3em 0;
-}
-
-/* The navigation bar */
-.header {
-  position: fixed;
+nav {
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
+  position: fixed;
   top: 0;
-  width: 100%;
+  width: 100%;      
 }
 
-#menu {
-  margin: 0.5em 0 0.25em 0;
-  padding-left: 0;
-}
-
-.menu-item {
-  display: inline-block;
-  padding: 0 0.5em;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  display: block;
-  color: #f2f2f2;
+nav ul {
+  margin: 0;
+  padding: 0;
   text-align: center;
-  padding: 0.1em 1em  ;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0.5em 0.5em;
+}
+
+nav ul li a {
+  color: white;
   text-decoration: none;
 }
 
-/* Change background on mouse-over */
-.navbar a:hover {
-  color: gray;
+nav ul li a:hover {
+  color: grey;
 }
 
-.content {
-  max-width: 960px;
-  margin: auto;
+/* Main content area */
+
+.main {
+  padding: 0em;
+  margin-top: 2em;
+  height: 1500px;
 }
-
-
-
-
-
-
