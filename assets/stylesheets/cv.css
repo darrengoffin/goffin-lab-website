@@ -66,11 +66,6 @@ main {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  main {
-    max-width: 80%;
-  }
-}
 
 article {
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
