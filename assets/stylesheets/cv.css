@@ -1,3 +1,9 @@
+:root {
+  --header-background-color: #333;
+  --header-title-color: white;
+  --header-subtitle-color: #5383d3;
+}
+
 body {
   margin:0;
   padding:0;
@@ -11,7 +17,7 @@ html body {
 
 nav {
   overflow: hidden;
-  background-color: black;
+  background-color: var(--header-background-color);
   position: fixed;
   top: 0;
   width: 100%;      
@@ -31,17 +37,14 @@ nav ul li {
 
 nav ul li a {
   color: white;
+  color: var(--header-title-color);
   text-decoration: none;
+}
+
+nav ul li a span {
+  color: var(--header-subtitle-color);
 }
 
 nav ul li a:hover {
   color: grey;
-}
-
-/* Main content area */
-
-.main {
-  padding: 0em;
-  margin-top: 2em;
-  height: 1500px;
 }
