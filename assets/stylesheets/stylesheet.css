@@ -45,7 +45,7 @@ body {
     font-size: 18px;
     line-height: 1.5;
     color: #333;
-    font-weight:300
+    font-weight:400
 }
 
 body pre, body code {
@@ -150,11 +150,11 @@ nav[role="navigation"] ul li {
 }
 
 nav[role="navigation"] ul li a:link {
-    color: #333;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 14px;
     display: block;
     padding: 10px
 }
@@ -649,3 +649,4 @@ article .more > p:first-of-type {
         display: none
     }
 }
+
