@@ -118,8 +118,6 @@ nav[role="navigation"] {
     background: #FAFAFA;
     border-right: 1px solid #e6e6e6;
     padding: 20px 30px;
-          user-select: none;
-
 }
 
 :root {
