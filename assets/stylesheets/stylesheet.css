@@ -108,7 +108,7 @@ h6 {
     line-height:1.5
 }
 
-nav{
+nav[role="navigation"] {
     width: 250px;
     position: fixed;
     overflow: scroll;
@@ -127,17 +127,17 @@ nav{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
 }
 
-nav h1 a {
+nav[role="navigation"] h1 a {
   color: var(--header-title-color);
   font-size: 40px;
   text-decoration: none;
 }
 
-nav h1 span {
+nav[role="navigation"] h1 span {
   color: var(--header-subtitle-color);
 }
 
-nav ul {
+nav[role="navigation"] ul {
     border-top: 1px solid #e6e6e6;
     font-size: 40px;
     font-weight: 400;
@@ -145,11 +145,11 @@ nav ul {
     list-style: none
 }
 
-nav ul li {
+nav[role="navigation"] ul li {
     border-bottom: 1px solid #e6e6e6
 }
 
-nav ul li a:link {
+nav[role="navigation"] ul li a:link {
     color: #333;
     text-decoration: none;
     text-transform: uppercase;
@@ -159,7 +159,7 @@ nav ul li a:link {
     padding: 10px
 }
 
-nav ul li a:hover {
+nav[role="navigation"] ul li a:hover {
     color: #0088cc
 }
 
@@ -516,7 +516,7 @@ article .more > p:first-of-type {
 }
 
 @media only screen and (max-width: 767px) {
-    nav {
+    nav[role="navigation"] {
         width: 100%;
         position: relative;
         background: #FAFAFA;
@@ -526,11 +526,11 @@ article .more > p:first-of-type {
         overflow: hidden
     }
 
-    nav.open > * {
+    nav[role="navigation"].open > * {
         display: block
     }
 
-    nav > h2, nav ul {
+    nav[role="navigation"]> h2, nav ul {
         display:none
     }
 
@@ -637,7 +637,7 @@ article .more > p:first-of-type {
         min-height: 1in
     }
 
-    nav {
+    nav[role="navigation"] {
         background: transparent;
         border: none;
         width: auto;
@@ -645,7 +645,7 @@ article .more > p:first-of-type {
         padding: 0
     }
 
-    nav h2, nav ul {
+    nav[role="navigation"] h2, nav[role="navigation"] ul {
         display: none
     }
 }
