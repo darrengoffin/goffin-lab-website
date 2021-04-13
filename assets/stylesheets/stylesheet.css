@@ -118,6 +118,8 @@ nav[role="navigation"] {
     background: #FAFAFA;
     border-right: 1px solid #e6e6e6;
     padding: 20px 30px
+          user-select: none;
+
 }
 
 :root {
@@ -131,7 +133,6 @@ nav[role="navigation"] h1 a {
   color: var(--header-title-color);
   font-size: 40px;
   text-decoration: none;
-  user-select: none;
 }
 
 nav[role="navigation"] h1 span {
