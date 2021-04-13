@@ -131,6 +131,7 @@ nav[role="navigation"] h1 a {
   color: var(--header-title-color);
   font-size: 40px;
   text-decoration: none;
+  user-select: none;
 }
 
 nav[role="navigation"] h1 span {
