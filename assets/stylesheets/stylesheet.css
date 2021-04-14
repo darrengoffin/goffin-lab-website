@@ -42,16 +42,7 @@ html, body {
 
 body {
     font-family: AvenirNextRoundedW01, sans-serif;    
-    font-size: 17px;
-    line-height: 1.65;
-    color: rgb(31,34,37);
-    font-weight: 500;
-    white-space: pre-wrap;
-    word-break: break-word;
-    display: block;
 }
-
-
 
 body pre, body code {
     font-family: "SF Mono", Menlo, Consolas, Monaco, "Courier New", monospace, serif
@@ -68,7 +59,13 @@ a:hover {
 }
 
 p {
-    margin-bottom:1em
+    font-size: 17px;
+    line-height: 1.65;
+    color: rgb(31,34,37);
+    font-weight: 500;
+    white-space: pre-wrap;
+    word-break: break-word;
+    display: block;
 }
 
 h1 {
