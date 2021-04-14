@@ -50,12 +50,12 @@ body pre, body code {
 
 a:link {
     color: #0088cc;
-    text-decoration:none
+    text-decoration:none;
 }
 
 a:hover {
     color: #0088cc;
-    text-decoration:underline
+    text-decoration:underline;
 }
 
 p {
